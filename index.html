@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+	<title>Portfolio</title>
+</head>
+<body>
+	<div class="min-h-screen flex flex-col font-body overflow-hidden"><!--Wrapper-->
+		<header class="md:absolute fixed z-20 w-full pt-12 text-white"><!--Header-->
+			<div class="lg:container lg:px-12 px-5">
+				<div class="flex items-center justify-between">
+					<div class="flex z-10">
+						<div class="mr-2 w-8 h-8">
+							<img class="block w-full" src="img/logo/logo.png" alt="">
+						</div>
+						<h1 class="flex flex-col leading-4 font-extrabold uppercase">
+							<span class="font-normal">Dart</span>
+							service manager
+						</h1>
+					</div>
+					<div class="md:hidden float-right z-10">
+						<i class="fas fa-bars text-xl" id="burger"></i>
+					</div>
+					<nav class="md:flex items-center w-8/12 menu__body">
+						<ul class="md:flex mr-auto leading-6 font-semibold md:text-base text-2xl">
+							<li class="menu__link">
+								<a href="">Home</a>
+							</li>	
+							<li class="menu__link lg:ml-12 md:ml-6 md:mt-0 mt-9">
+								<a href="">Service</a>
+							</li>	
+							<li class="menu__link lg:ml-12 md:ml-6 md:mt-0 mt-9">
+								<a href="">Extension</a>
+							</li>	
+							<li class="menu__link lg:ml-12 md:ml-6 md:mt-0 mt-9">
+								<a href="">Pricing</a>
+							</li>	
+							<li class="menu__link lg:ml-12 md:ml-6 md:mt-0 mt-9">
+								<a href="">Help</a>
+							</li>	
+						</ul>
+						<a href=""class="sing__up">
+							sign up</a>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main><!--Content-->
+			<section>
+				<div class="max-h-screen w-full">
+					<div class="gradient-bg">
+						<img class="w-full object-cover h-screen" src="img/hero/hero.png" alt="">
+					</div>
+				</div>
+			</section>
+			<!--
+			<section>
+				<div class="md:container px-20">
+					<div class="text-center py-24">
+						<h2 class="text-5xl font-semibold leading-tight text-black-light">Easy & Useful</h2>
+						<h3 class="text-2xl leading-tight font-semibold text-gray-300 mt-3 mb-5">Project Management Tool</h3>
+						<p class="leading-6 text-gray-300 max-w-xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+					</div>
+					<div class="flex justify-between">
+						<div class="flex flex-col items-center max-w-xs text-center">
+							<img src="img/easy & useful/calendar.png" alt="">
+							<h4 class="text-xl leading-6 font-semibold mt-10 mb-5 text-black-light">Title Goes Here</h4>
+							<p class="leading-5 text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<div class="flex flex-col items-center max-w-xs text-center">
+							<img class="bottom-3 relative" src="img/easy & useful/football_men.png" alt="">
+							<h4 class="text-xl leading-6 font-semibold mt-9 mb-5 text-black-light">Title Goes Here</h4>
+							<p class="leading-5 text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<div class="flex flex-col items-center max-w-xs text-center">
+							<img src="img/easy & useful/working_man.png" alt="">
+							<h4 class="text-xl leading-6 font-semibold mt-10 mb-5 text-black-light">Title Goes Here</h4>
+							<p class="leading-5 text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</div>
+					<div class="text-center mt-20 mb-24">
+					<button class=" bg-green-500 w-36 h-12 shadow-3xl rounded-md focus:outline-none transform active:translate-y-1 text-white font-bold leading-tight uppercase">Get started</button>
+					</div>
+					<div>
+					</div>
+				</div>
+					<div class="flex flex-nowrap sm:flex-row flex-col w-full text-white text-xl leading-6 font-extrabold">
+						<div class="bg-blue-light w-full h-36 flex items-center justify-center">
+							<i class="material-icons bg-white text-blue-light w-16 h-16 rounded-full text-center pt-4" style="font-size: 30px;line-height: 25px;">business</i>
+							<p class="inline-block ml-5">12000+<br/>Business</p>
+						</div>
+						<div class="bg-blue w-full h-36 flex items-center justify-center">
+							<i class="material-icons bg-white text-blue w-16 h-16 rounded-full text-center pt-4"
+							style="font-size: 30px;line-height: 25px;">file_download</i>
+						<p class="inline-block ml-5">60000+<br/>Downloads</p>
+						</div>
+						<div class="bg-purple-light w-full h-36 flex items-center justify-center">
+							<i class="material-icons bg-white text-purple-light w-16 h-16 rounded-full text-center pt-4"
+								style="font-size: 30px;line-height: 25px;">person</i>
+							<p class="inline-block ml-5">30000+<br/>Free Installs</p>
+						</div>
+						<div class="bg-pink-light w-full h-36 flex items-center justify-center">
+							<i class="material-icons bg-white text-pink-light w-16 h-16 rounded-full text-center pt-4"
+								style="font-size: 30px;line-height: 25px;">file_download</i>
+							<p class="inline-block ml-5">40000+<br/>Pro Users</p>
+						</div>
+					</div>
+			</section>
+			<section>
+				<div class="md:container px-20">
+					<div class="text-center py-24">
+						<h2 class="text-5xl font-semibold leading-tight">Services</h2>
+						<p class="leading-6 text-gray-300 max-w-xl mx-auto mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+					</div>
+					<div class="text-black-light">
+						<div class="max-w-3xl mx-auto p-6">
+							<div class="flex justify-between cursor-pointer spoiler__title">
+								<div class="flex">
+									<i class="material-icons mr-6" style="font-size: 20px; line-height: 25px;">trending_up</i>
+									<h4 class="leading-tight font-bold uppercase">Statistics</h4>
+								</div>
+								<i class="material-icons" style="font-size: 20px; line-height: 25px;">arrow_drop_down</i>
+							</div>
+							<div class="mt-6 spoiler__content hidden">
+							<div class="flex">
+								<img src="img/services/statistics.png" alt="">
+								<p class="leading-6 tracking-wide ml-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<br/><br/>
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
+							</div>
+							</div>
+						</div>
+						<div class="max-w-3xl mx-auto p-6">
+							<div class="flex justify-between cursor-pointer spoiler__title">
+								<div class="flex">
+									<i class="material-icons mr-6" style="font-size: 20px; line-height: 25px;">mail</i>
+									<h4 class="leading-tight font-bold uppercase">Inbox</h4>
+								</div>
+								<i class="material-icons" style="font-size: 20px; line-height: 25px;">arrow_drop_down</i>
+							</div>
+							<div class="mt-6 spoiler__content hidden">
+							<div class="flex">
+								<img src="img/services/statistics.png" alt="">
+								<p class="leading-6 tracking-wide ml-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<br/><br/>
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
+							</div>
+							</div>
+						</div>
+						<div class="max-w-3xl mx-auto p-6">
+							<div class="flex justify-between cursor-pointer spoiler__title">
+								<div class="flex">
+									<i class="material-icons mr-6" style="font-size: 20px; line-height: 25px;">group</i>
+									<h4 class="leading-tight font-bold uppercase">Team</h4>
+								</div>
+								<i class="material-icons" style="font-size: 20px; line-height: 25px;">arrow_drop_down</i>
+							</div>
+							<div class="mt-6 spoiler__content hidden">
+							<div class="flex">
+								<img src="img/services/statistics.png" alt="">
+								<p class="leading-6 tracking-wide ml-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<br/><br/>
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
+							</div>
+							</div>
+						</div>
+						<div class="max-w-3xl mx-auto p-6">
+							<div class="flex justify-between cursor-pointer spoiler__title">
+								<div class="flex">
+									<i class="material-icons mr-6" style="font-size: 20px; line-height: 25px;">settings</i>
+									<h4 class="leading-tight font-bold uppercase">Settings</h4>
+								</div>
+								<i class="material-icons" style="font-size: 20px; line-height: 25px;">arrow_drop_down</i>
+							</div>
+							<div class="mt-6 spoiler__content hidden">
+							<div class="flex">
+								<img src="img/services/statistics.png" alt="">
+								<p class="leading-6 tracking-wide ml-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<br/><br/>
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
+							</div>
+							</div>
+						</div>
+						<div class="max-w-3xl mx-auto p-6">
+							<div class="flex justify-between cursor-pointer spoiler__title">
+								<div class="flex">
+									<i class="material-icons mr-6" style="font-size: 20px; line-height: 25px;">rss_feed</i>
+									<h4 class="leading-tight font-bold uppercase">Feed</h4>
+								</div>
+								<i class="material-icons" style="font-size: 20px; line-height: 25px;">arrow_drop_down</i>
+							</div>
+							<div class="mt-6 spoiler__content hidden">
+							<div class="flex">
+								<img src="img/services/statistics.png" alt="">
+								<p class="leading-6 tracking-wide ml-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<br/><br/>
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="bg-gradient-to-r from-aquamarine to-aqua">
+				<img class="opacity-20 relative w-full" src="img/reviews/reviews_bg.png" alt="">
+				<div class="md:container px-20 md:flex justify-between absolute">
+					<div class="text-white absolute bottom-24">
+						<h1 class="text-5xl font-semibold leading-tight uppercase">What our customers<br />have to say about us.</h1>
+						<p class="leading-6 font-semibold max-w-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+						<div class="uppercase leading-tight mt-4">
+							<button class="w-40 h-14 mt-6 bg-black-light rounded-md shadow-3xl focus:outline-none transform active:translate-y-1">Buy now</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			-->
+		</main>
+		<footer><!--Footer-->
+		</footer>
+	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>
+<script src="https://kit.fontawesome.com/33ab3e3e12.js" crossorigin="anonymous"></script>
+</body>
+</html>

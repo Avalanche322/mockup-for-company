@@ -1,0 +1,40 @@
+/*=====================================Font family========================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&display=swap');
+
+/*=====================================Tailwind========================================================*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*=====================================Custom css========================================================*/
+html{
+	 scroll-behavior: smooth;
+}
+.gradient-bg:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	opacity: 0.9;
+	background-color: #061e37;
+	background-image: linear-gradient(-53.0deg, #00b8d4 -11%, #1de9b6 111%);
+}
+.menu__link{
+	@apply md:hover:text-black-light transition ease-in md:hover:text-opacity-100 hover:text-opacity-50 hover:text-white
+}
+.sing__up{
+	@apply block max-w-xs border border-white text-xl leading-6 md:px-4 md:py-1 py-2 md:text-sm md:hover:text-black-light md:hover:border-black-light transition ease-in md:mt-0 mt-9 md:mx-0 mx-auto md:hover:text-opacity-100 hover:text-opacity-50 hover:text-white md:hover:border-white md:hover:border-opacity-100 hover:border-opacity-50
+}
+@media(max-width:768px){
+.menu__body{
+	@apply fixed -top-full left-0 w-full h-full bg-black-light transition-all duration-700 overflow-auto pt-40 px-7 pb-7 text-center
+}
+.menu__body.active{
+	@apply top-0
+}
+}
+
