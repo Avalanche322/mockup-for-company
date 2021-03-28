@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/icofont.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 	<title>Portfolio</title>
 </head>
@@ -50,85 +51,100 @@
 			</div>
 		</header>
 		<main><!--Content-->
-			<section>
-				<div class="max-h-screen w-full">
-					<div class="gradient-bg">
+			<section><!--Hero-->
+				<div class=" w-full">
+					<div class="hero__gradient-bg">
 						<img class="w-full object-cover h-screen" src="img/hero/hero.png" alt="">
+						<div class="absolute z-10 top-1/4 w-full">
+							<div class="lg:container lg:px-12 px-5">
+								<div class="md:flex justify-between text-white">
+									<div class=" max-w-xl">
+										<h2 class="text-6xl leading-14 uppercase font-bold">lorem Ipsum Dolor sit amet</h2>
+										<p class="text-lg leading-9">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+											incididunt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc
+											laboris nisi ut aliquip ex ea commodo consequat.
+										</p>
+										<div class="flex mt-9">
+											<a class="hero__buttons bg-blue-dark px-11" href="">Buy now</a>
+											<a class="hero__buttons bg-white text-blue-dark font-bold px-7 ml-7" href="">Try for free</a>
+										</div>
+									</div>
+									<div class="max-w-xl max-h-80 hero__bg-img">
+										<img class="w-full object-cover" src="img/hero/video/prevue.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</section>	
+			<section><!--Easy & Useful-->
+				<div class="lg:container lg:px-12 px-5">
+					<div class="text-center max-w-xl mx-auto mt-24">
+						<h3 class="text-5xl leading-tight font-semibold text-blue-dark">Easy & Useful</h3>
+						<p class="text-2xl leading-tight font-semibold text-gray-light my-2">Project Management Tool</p>
+						<p class="leading-6 text-gray-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+					</div>
+					<div class="flex text-center mt-24 md:justify-between justify-center flex-wrap md:flex-nowrap">
+						<div class="max-w-sm">
+							<i class="icofont-ui-calendar text-7xl text-purple"></i>
+							<h4 class="text-xl font-semibold leading-6 text-blue-dark mt-7 mb-2">Title Goes Here</h4>
+							<p class="leading-5 text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<div class="max-w-sm md:mt-0 mt-10">
+							<i class="icofont-team text-7xl text-blue-light"></i>
+							<h4 class="text-xl font-semibold leading-6 text-blue-dark mt-7 mb-2">Title Goes Here</h4>
+							<p class="leading-5 text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<div class="max-w-sm md:mt-0 mt-10">
+							<i class="icofont-worker text-7xl text-pink"></i>
+							<h4 class="text-xl font-semibold leading-6 text-blue-dark mt-7 mb-2">Title Goes Here</h4>
+							<p class="leading-5 text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</div>
+					<a class="hero__buttons bg-lime px-6 mx-auto mt-16 mb-24 text-white font-bold leading-tight" href="">
+						Get started</a>
+				</div>
+				<div class="extra-md:flex text-white">
+					<div class="bg-blue-light w-full py-14 text-center">
+						<i class="material-icons easy-and-useful__material-icon text-blue-light">business</i>
+						<p class="inline-block ml-4 lg:text-left text-xl font-extrabold leading-6">12000+<br/>Business</p>
+					</div>
+					<div class="bg-blue w-full py-14 text-center">
+						<i class="material-icons easy-and-useful__material-icon text-blue-light">file_download</i>
+						<p class="inline-block ml-4 text-left text-xl font-extrabold leading-6">60000+<br />Downloads</p>
+					</div>
+					<div class="bg-purple w-full py-14 text-center">
+						<i class="material-icons easy-and-useful__material-icon text-blue-light">person</i>
+						<p class="inline-block ml-4 text-left text-xl font-extrabold leading-6">30000+<br />Free Installs</p>
+					</div>
+					<div class="bg-pink w-full py-14 text-center">
+						<i class="material-icons easy-and-useful__material-icon text-blue-light">file_download</i>
+						<p class="inline-block ml-4 text-left text-xl font-extrabold leading-6">40000+<br />Pro Users</p>
 					</div>
 				</div>
 			</section>
-			<!--
-			<section>
-				<div class="md:container px-20">
-					<div class="text-center py-24">
-						<h2 class="text-5xl font-semibold leading-tight text-black-light">Easy & Useful</h2>
-						<h3 class="text-2xl leading-tight font-semibold text-gray-300 mt-3 mb-5">Project Management Tool</h3>
-						<p class="leading-6 text-gray-300 max-w-xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+			<section><!--Services-->
+				<div class="lg:container lg:px-12 px-5">
+					<div class="text-center max-w-xl mx-auto mt-24">
+						<h3 class="text-5xl leading-tight font-semibold text-blue-dark">Services</h3>
+						<p class="leading-6 text-gray-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
 					</div>
-					<div class="flex justify-between">
-						<div class="flex flex-col items-center max-w-xs text-center">
-							<img src="img/easy & useful/calendar.png" alt="">
-							<h4 class="text-xl leading-6 font-semibold mt-10 mb-5 text-black-light">Title Goes Here</h4>
-							<p class="leading-5 text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						</div>
-						<div class="flex flex-col items-center max-w-xs text-center">
-							<img class="bottom-3 relative" src="img/easy & useful/football_men.png" alt="">
-							<h4 class="text-xl leading-6 font-semibold mt-9 mb-5 text-black-light">Title Goes Here</h4>
-							<p class="leading-5 text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						</div>
-						<div class="flex flex-col items-center max-w-xs text-center">
-							<img src="img/easy & useful/working_man.png" alt="">
-							<h4 class="text-xl leading-6 font-semibold mt-10 mb-5 text-black-light">Title Goes Here</h4>
-							<p class="leading-5 text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						</div>
-					</div>
-					<div class="text-center mt-20 mb-24">
-					<button class=" bg-green-500 w-36 h-12 shadow-3xl rounded-md focus:outline-none transform active:translate-y-1 text-white font-bold leading-tight uppercase">Get started</button>
-					</div>
-					<div>
-					</div>
-				</div>
-					<div class="flex flex-nowrap sm:flex-row flex-col w-full text-white text-xl leading-6 font-extrabold">
-						<div class="bg-blue-light w-full h-36 flex items-center justify-center">
-							<i class="material-icons bg-white text-blue-light w-16 h-16 rounded-full text-center pt-4" style="font-size: 30px;line-height: 25px;">business</i>
-							<p class="inline-block ml-5">12000+<br/>Business</p>
-						</div>
-						<div class="bg-blue w-full h-36 flex items-center justify-center">
-							<i class="material-icons bg-white text-blue w-16 h-16 rounded-full text-center pt-4"
-							style="font-size: 30px;line-height: 25px;">file_download</i>
-						<p class="inline-block ml-5">60000+<br/>Downloads</p>
-						</div>
-						<div class="bg-purple-light w-full h-36 flex items-center justify-center">
-							<i class="material-icons bg-white text-purple-light w-16 h-16 rounded-full text-center pt-4"
-								style="font-size: 30px;line-height: 25px;">person</i>
-							<p class="inline-block ml-5">30000+<br/>Free Installs</p>
-						</div>
-						<div class="bg-pink-light w-full h-36 flex items-center justify-center">
-							<i class="material-icons bg-white text-pink-light w-16 h-16 rounded-full text-center pt-4"
-								style="font-size: 30px;line-height: 25px;">file_download</i>
-							<p class="inline-block ml-5">40000+<br/>Pro Users</p>
-						</div>
-					</div>
-			</section>
-			<section>
-				<div class="md:container px-20">
-					<div class="text-center py-24">
-						<h2 class="text-5xl font-semibold leading-tight">Services</h2>
-						<p class="leading-6 text-gray-300 max-w-xl mx-auto mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-					</div>
-					<div class="text-black-light">
+					<div class="text-blue-dark mt-12 mb-24">
 						<div class="max-w-3xl mx-auto p-6">
 							<div class="flex justify-between cursor-pointer spoiler__title">
 								<div class="flex">
-									<i class="material-icons mr-6" style="font-size: 20px; line-height: 25px;">trending_up</i>
+									<i class="material-icons mr-6 service__material-icon">trending_up</i>
 									<h4 class="leading-tight font-bold uppercase">Statistics</h4>
 								</div>
-								<i class="material-icons" style="font-size: 20px; line-height: 25px;">arrow_drop_down</i>
+								<i class="material-icons service__material-icon">arrow_drop_down</i>
 							</div>
 							<div class="mt-6 spoiler__content hidden">
-							<div class="flex">
+							<div class="md:flex">
 								<img src="img/services/statistics.png" alt="">
-								<p class="leading-6 tracking-wide ml-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<br/><br/>
+								<p class="leading-6 tracking-wide md:ml-6 md:mt-0 mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<br/><br/>
 								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
 							</div>
 							</div>
@@ -136,83 +152,147 @@
 						<div class="max-w-3xl mx-auto p-6">
 							<div class="flex justify-between cursor-pointer spoiler__title">
 								<div class="flex">
-									<i class="material-icons mr-6" style="font-size: 20px; line-height: 25px;">mail</i>
-									<h4 class="leading-tight font-bold uppercase">Inbox</h4>
+									<i class="material-icons mr-6 service__material-icon">mail</i>
+									<h4 class="leading-tight font-bold uppercase">inbox</h4>
 								</div>
-								<i class="material-icons" style="font-size: 20px; line-height: 25px;">arrow_drop_down</i>
+								<i class="material-icons service__material-icon">arrow_drop_down</i>
 							</div>
 							<div class="mt-6 spoiler__content hidden">
-							<div class="flex">
-								<img src="img/services/statistics.png" alt="">
-								<p class="leading-6 tracking-wide ml-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<br/><br/>
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
-							</div>
+								<div class="md:flex">
+									<img src="img/services/statistics.png" alt="">
+									<p class="leading-6 tracking-wide md:ml-6 md:mt-0 mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing
+										elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+										veniam.<br /><br />
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+										reprehenderit in</p>
+								</div>
 							</div>
 						</div>
 						<div class="max-w-3xl mx-auto p-6">
 							<div class="flex justify-between cursor-pointer spoiler__title">
 								<div class="flex">
-									<i class="material-icons mr-6" style="font-size: 20px; line-height: 25px;">group</i>
-									<h4 class="leading-tight font-bold uppercase">Team</h4>
+									<i class="material-icons mr-6 service__material-icon">group</i>
+									<h4 class="leading-tight font-bold uppercase">team</h4>
 								</div>
-								<i class="material-icons" style="font-size: 20px; line-height: 25px;">arrow_drop_down</i>
+								<i class="material-icons service__material-icon">arrow_drop_down</i>
 							</div>
 							<div class="mt-6 spoiler__content hidden">
-							<div class="flex">
-								<img src="img/services/statistics.png" alt="">
-								<p class="leading-6 tracking-wide ml-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<br/><br/>
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
-							</div>
+								<div class="md:flex">
+									<img src="img/services/statistics.png" alt="">
+									<p class="leading-6 tracking-wide md:ml-6 md:mt-0 mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing
+										elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+										veniam.<br /><br />
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+										reprehenderit in</p>
+								</div>
 							</div>
 						</div>
 						<div class="max-w-3xl mx-auto p-6">
 							<div class="flex justify-between cursor-pointer spoiler__title">
 								<div class="flex">
-									<i class="material-icons mr-6" style="font-size: 20px; line-height: 25px;">settings</i>
-									<h4 class="leading-tight font-bold uppercase">Settings</h4>
+									<i class="material-icons mr-6 service__material-icon">settings</i>
+									<h4 class="leading-tight font-bold uppercase">settings</h4>
 								</div>
-								<i class="material-icons" style="font-size: 20px; line-height: 25px;">arrow_drop_down</i>
+								<i class="material-icons service__material-icon">arrow_drop_down</i>
 							</div>
 							<div class="mt-6 spoiler__content hidden">
-							<div class="flex">
-								<img src="img/services/statistics.png" alt="">
-								<p class="leading-6 tracking-wide ml-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<br/><br/>
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
-							</div>
+								<div class="md:flex">
+									<img src="img/services/statistics.png" alt="">
+									<p class="leading-6 tracking-wide md:ml-6 md:mt-0 mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing
+										elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+										veniam.<br /><br />
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+										reprehenderit in</p>
+								</div>
 							</div>
 						</div>
 						<div class="max-w-3xl mx-auto p-6">
 							<div class="flex justify-between cursor-pointer spoiler__title">
 								<div class="flex">
-									<i class="material-icons mr-6" style="font-size: 20px; line-height: 25px;">rss_feed</i>
-									<h4 class="leading-tight font-bold uppercase">Feed</h4>
+									<i class="material-icons mr-6 service__material-icon">rss_feed</i>
+									<h4 class="leading-tight font-bold uppercase">feed</h4>
 								</div>
-								<i class="material-icons" style="font-size: 20px; line-height: 25px;">arrow_drop_down</i>
+								<i class="material-icons service__material-icon">arrow_drop_down</i>
 							</div>
 							<div class="mt-6 spoiler__content hidden">
-							<div class="flex">
-								<img src="img/services/statistics.png" alt="">
-								<p class="leading-6 tracking-wide ml-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<br/><br/>
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
-							</div>
+								<div class="md:flex">
+									<img src="img/services/statistics.png" alt="">
+									<p class="leading-6 tracking-wide md:ml-6 md:mt-0 mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing
+										elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+										veniam.<br /><br />
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+										reprehenderit in</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="bg-gradient-to-r from-aquamarine to-aqua">
-				<img class="opacity-20 relative w-full" src="img/reviews/reviews_bg.png" alt="">
-				<div class="md:container px-20 md:flex justify-between absolute">
-					<div class="text-white absolute bottom-24">
-						<h1 class="text-5xl font-semibold leading-tight uppercase">What our customers<br />have to say about us.</h1>
-						<p class="leading-6 font-semibold max-w-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-						<div class="uppercase leading-tight mt-4">
-							<button class="w-40 h-14 mt-6 bg-black-light rounded-md shadow-3xl focus:outline-none transform active:translate-y-1">Buy now</button>
+			<section><!--Reviews-->
+				<div class="w-full">
+					<div class="reviews__gradient-bg">
+						<img class="w-full object-cover lg:h-auto h-screen" src="img/reviews/reviews_bg.png" alt="">
+						<div class="absolute top-1/4 z-10 w-full">
+							<div class="lg:container lg:px-12 px-5">
+								<div class="flex justify-between">
+									<div class="max-w-xl top-1/4 text-white">
+										<h2 class="text-5xl leading-tight font-semibold">
+											What our customers have to say about us.</h2>
+										<p class="leading-6 font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+										<div class="flex mt-20">
+											<a class="hero__buttons bg-blue-dark px-11 leading-tight font-bold" href="">Get started</a>
+										</div>
+									</div>
+									<div class="reviews__slider -mt-24">
+										<div class="reviews__slider-item flex items-center p-5">
+											<div class="w-16 h-16 mr-12">
+												<img class="block w-full" src="img/reviews/man1.png" alt="">
+											</div>
+											<div class="bg-white rounded-md py-8 pl-8 pr-16 max-w-2xl max-h-40">
+												<h4 class="text-lg leading-6 font-bold">John Doe</h4>
+												<p class="leading-6 italic text-gray mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+											</div>
+										</div>
+										<div class="reviews__slider-item flex items-center p-5">
+											<div class="w-16 h-16 mr-12">
+												<img class="block w-full" src="img/reviews/woman1.png" alt="">
+											</div>
+											<div class="bg-white rounded-md py-8 pl-8 pr-16 max-w-2xl max-h-40">
+												<h4 class="text-lg leading-6 font-bold">John Doe</h4>
+												<p class="leading-6 italic text-gray mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+													eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco laboris nisi ut aliquip ex ea</p>
+											</div>
+										</div>
+										<div class="reviews__slider-item flex items-center p-5">
+											<div class="w-16 h-16 mr-12">
+												<img class="block w-full" src="img/reviews/man1.png" alt="">
+											</div>
+											<div class="bg-white rounded-md py-8 pl-8 pr-16 max-w-2xl max-h-40">
+												<h4 class="text-lg leading-6 font-bold">John Doe</h4>
+												<p class="leading-6 italic text-gray mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+													eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco laboris nisi ut aliquip ex ea</p>
+											</div>
+										</div>
+										<div class="reviews__slider-item flex items-center p-5">
+											<div class="w-16 h-16 mr-12">
+												<img class="block w-full" src="img/reviews/woman1.png" alt="">
+											</div>
+											<div class="bg-white rounded-md py-8 pl-8 pr-16 max-w-2xl max-h-40">
+												<h4 class="text-lg leading-6 font-bold">John Doe</h4>
+												<p class="leading-6 italic text-gray mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+													eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco laboris nisi ut aliquip ex ea</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
+					</div>		
 				</div>
-			</section>
-			-->
+			</section>			
 		</main>
 		<footer><!--Footer-->
 		</footer>

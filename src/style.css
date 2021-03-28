@@ -11,30 +11,73 @@
 html{
 	 scroll-behavior: smooth;
 }
-.gradient-bg:before{
+.hero__gradient-bg{
+	position: relative;
+}
+.hero__gradient-bg::after{
 	content: '';
 	position: absolute;
 	top: 0;
 	left: 0;
-	bottom: 0;
-	right: 0;
-	z-index: 1;
+	height: 100%;
+	width: 100%;
 	opacity: 0.9;
 	background-color: #061e37;
 	background-image: linear-gradient(-53.0deg, #00b8d4 -11%, #1de9b6 111%);
 }
+.reviews__gradient-bg{
+	position: relative;
+}
+.reviews__gradient-bg::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #1de9b6;
+	background-image: linear-gradient(-53.0deg, #00b8d4 -3%, #1de9b6 104%);
+	opacity: 0.94;
+}
+
 .menu__link{
-	@apply md:hover:text-black-light transition ease-in md:hover:text-opacity-100 hover:text-opacity-50 hover:text-white
+	@apply md:hover:text-blue-dark transition ease-in md:hover:text-opacity-100 hover:text-opacity-50 hover:text-white
 }
 .sing__up{
-	@apply block max-w-xs border border-white text-xl leading-6 md:px-4 md:py-1 py-2 md:text-sm md:hover:text-black-light md:hover:border-black-light transition ease-in md:mt-0 mt-9 md:mx-0 mx-auto md:hover:text-opacity-100 hover:text-opacity-50 hover:text-white md:hover:border-white md:hover:border-opacity-100 hover:border-opacity-50
+	@apply block max-w-xs border border-white text-xl leading-6 md:px-4 md:py-1 py-2 md:text-sm md:hover:text-blue-dark md:hover:border-blue-dark transition ease-in md:mt-0 mt-9 md:mx-0 mx-auto md:hover:text-opacity-100 hover:text-opacity-50 hover:text-white md:hover:border-white md:hover:border-opacity-100 hover:border-opacity-50
+}
+.hero__buttons{
+	@apply block max-w-max leading-tight uppercase shadow-3xl rounded-md py-5 transform active:translate-y-1 active:shadow-none transition-all
+}
+.easy-and-useful__material-icon{
+	@apply w-16 h-16 bg-white rounded-full text-center  pt-5
+}
+.material-icons.easy-and-useful__material-icon{
+	font-size: 30px;
+	line-height: 25px;
+}
+.material-icons.service__material-icon{
+	font-size: 20px;
+	line-height: 25px;
+}
+/* Reviews__slider */
+.slick-list{
+	@apply overflow-hidden
+}
+.reviews__slider-item{}
+.reviews__slider .slick-arrow {
+	@apply block w-12 mx-auto cursor-pointer text-none
+}
+.reviews__slider .slick-arrow:hover{
+	@apply opacity-60
 }
 @media(max-width:768px){
 .menu__body{
-	@apply fixed -top-full left-0 w-full h-full bg-black-light transition-all duration-700 overflow-auto pt-40 px-7 pb-7 text-center
+	@apply fixed -top-full left-0 w-full h-full bg-blue-dark transition-all duration-700 overflow-auto pt-40 px-7 pb-7 text-center
 }
 .menu__body.active{
 	@apply top-0
 }
 }
+
 
