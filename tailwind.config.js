@@ -7,11 +7,12 @@ module.exports = {
 		  transparent: 'transparent',
 		  current: 'currentColor',
 		  black: colors.black,
-		  white: colors.white,
+		  white: colors.white,		
+		  
 		  blue: {
 			  light: '#80d8ff',
 			  DEFAULT: '#82b1ff',
-			  dark: '#061e37'
+			  dark: '#061e37',
 		  },
 		  purple: {
 			  DEFAULT: '#b388ff'
@@ -22,6 +23,8 @@ module.exports = {
 		  gray: {
 			  light: '#b0bec5',
 			  DEFAULT: '#78909c',
+			  dark: '#90a4ae',
+			  lighten: '#fafafa',
 		  },
 		  lime: {
 			  DEFAULT: '#1de9b6'
@@ -42,6 +45,7 @@ module.exports = {
 		},
 		screens: {
 			'extra-md': {'min': '920px' },
+			'mini-sm': { 'min': '420px' },
 		},
 		fontSize: {
 			'none': '0rem',

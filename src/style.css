@@ -1,5 +1,5 @@
 /*=====================================Font family========================================================*/
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
 
 /*=====================================Tailwind========================================================*/
 
@@ -8,12 +8,30 @@
 @tailwind utilities;
 
 /*=====================================Custom css========================================================*/
+
+/*=====================================Common========================================================*/
 html{
-	 scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
+.button{
+	@apply block max-w-max leading-tight uppercase shadow-3xl rounded-md py-5 transform active:translate-y-1 active:shadow-none transition-animation-150
+}
+
+/*=====================================Header========================================================*/
+.menu__link{
+	@apply md:hover:text-blue-dark transition-animation-150 md:hover:text-opacity-100 hover:text-opacity-50 hover:text-white
+}
+.sing__up{
+	@apply block max-w-xs border border-white text-xl leading-6 md:px-4 md:py-1 py-2 md:text-sm md:hover:text-blue-dark md:hover:border-blue-dark transition-animation-150 md:mt-0 mt-9 md:mx-0 mx-auto md:hover:text-opacity-100 hover:text-opacity-50 hover:text-white md:hover:border-white md:hover:border-opacity-100 hover:border-opacity-50
+}
+/*=====================================Hero========================================================*/
 .hero__gradient-bg{
 	position: relative;
 }
+.transition-animation-150{
+	@apply transition-all ease-in duration-150
+}
+
 .hero__gradient-bg::after{
 	content: '';
 	position: absolute;
@@ -24,6 +42,28 @@ html{
 	opacity: 0.9;
 	background-color: #061e37;
 	background-image: linear-gradient(-53.0deg, #00b8d4 -11%, #1de9b6 111%);
+}
+/*=====================================Easy & Useful========================================================*/
+.easy-and-useful__material-icon{
+	@apply w-16 h-16 bg-white rounded-full text-center  pt-5
+}
+.material-icons.easy-and-useful__material-icon{
+	font-size: 30px;
+	line-height: 25px;
+}
+.material-icons.service__material-icon{
+	font-size: 20px;
+	line-height: 25px;
+}
+/*=====================================Reviews========================================================*/
+.reviews__slider .slick-list{
+	@apply overflow-hidden
+}
+.reviews__slider .slick-arrow {
+	@apply block w-12 mx-auto cursor-pointer text-none
+}
+.reviews__slider .slick-arrow:hover{
+	@apply opacity-60 transition-animation-150
 }
 .reviews__gradient-bg{
 	position: relative;
@@ -39,44 +79,113 @@ html{
 	background-image: linear-gradient(-53.0deg, #00b8d4 -3%, #1de9b6 104%);
 	opacity: 0.94;
 }
-
-.menu__link{
-	@apply md:hover:text-blue-dark transition ease-in md:hover:text-opacity-100 hover:text-opacity-50 hover:text-white
+/*=====================================Our Team========================================================*/
+.our-team__slider .slick-track{
+	@apply flex
 }
-.sing__up{
-	@apply block max-w-xs border border-white text-xl leading-6 md:px-4 md:py-1 py-2 md:text-sm md:hover:text-blue-dark md:hover:border-blue-dark transition ease-in md:mt-0 mt-9 md:mx-0 mx-auto md:hover:text-opacity-100 hover:text-opacity-50 hover:text-white md:hover:border-white md:hover:border-opacity-100 hover:border-opacity-50
+.our-team__slider-item{
+	@apply max-w-md
 }
-.hero__buttons{
-	@apply block max-w-max leading-tight uppercase shadow-3xl rounded-md py-5 transform active:translate-y-1 active:shadow-none transition-all
-}
-.easy-and-useful__material-icon{
-	@apply w-16 h-16 bg-white rounded-full text-center  pt-5
-}
-.material-icons.easy-and-useful__material-icon{
-	font-size: 30px;
-	line-height: 25px;
-}
-.material-icons.service__material-icon{
-	font-size: 20px;
-	line-height: 25px;
-}
-/* Reviews__slider */
-.slick-list{
+.our-team__slider .slick-list{
 	@apply overflow-hidden
 }
-.reviews__slider-item{}
-.reviews__slider .slick-arrow {
-	@apply block w-12 mx-auto cursor-pointer text-none
+/*=====================================Footer========================================================*/
+.footer__adition-menu li::before{
+	content: '';
+	display: inline-block;
+	margin: 0px 10px 3px 0px;
+	width: 5px;
+	height: 5px;
+	background: rgba(255, 255, 255, 1);
+	border-radius: 50%;
+	
 }
-.reviews__slider .slick-arrow:hover{
-	@apply opacity-60
+.footer__social a{
+	@apply mini-sm:mr-7 mr-2 opacity-20 hover:opacity-100 transition-animation-150
 }
+.footer__social a:last-child{
+	@apply mr-0
+}
+/*=====================================Contact Us========================================================*/
+.contact-us__form .contact-us__form-item{
+	@apply border border-blue-dark py-4 pl-4 rounded-md w-full
+}
+.contact-us__form input::placeholder, 
+.contact-us__form textarea::placeholder {
+	@apply text-blue-dark leading-7 font-medium font-body
+}
+.contact-us__form-subscribe{
+  position: relative;
+  width: 20px;
+  height: 20px;
+  color: #363839;
+  border: 1px solid #061e37;
+  border-radius: 4px;
+  appearance: none;
+  outline: 0;
+  cursor: pointer;
+  transition: background 175ms cubic-bezier(0.1, 0.1, 0.25, 1);
+}
+.contact-us__form-subscribe::before {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 2px;
+  left: 6px;
+  width: 6px;
+  height: 12px;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+.contact-us__form-subscribe:checked {
+  color: #fff;
+  border-color: #06842c;
+  background: #06842c;
+}
+.contact-us__form-subscribe::before {
+  opacity: 1;
+}
+.contact-us__form-subscribe:checked ~ .contact-us__form-subscribe-text::before {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.contact-us__form-subscribe-text{
+	position: relative;
+	cursor: pointer;
+	padding: 0 0.25em 0;
+	user-select: none;
+	font-size: 15px;
+	line-height: 1.2;
+	font-weight: 500;
+	color: #061e37;
+}
+.contact-us__form-subscribe-text::before {
+  position: absolute;
+  content: attr(data-content);
+  color: #9c9e9f;
+  clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+  text-decoration: line-through;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #363839;
+  transition: clip-path 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+/*=====================================Adaptation========================================================*/
 @media(max-width:768px){
 .menu__body{
 	@apply fixed -top-full left-0 w-full h-full bg-blue-dark transition-all duration-700 overflow-auto pt-40 px-7 pb-7 text-center
 }
 .menu__body.active{
 	@apply top-0
+}
+}
+@media(min-width: 420px){
+.footer__adition-menu li:first-child::before{
+	content: none;
+}
+.footer__adition-menu li::before{
+	margin: 0px 20px 3px 20px;
 }
 }
 

@@ -7,15 +7,37 @@ $(document).ready(function(){
 		verticalSwiping: true,
 		slidesToShow: 2,
 		autoplay: true,
-		customPaging: '1200px',
 		accessibility: false,
 		prevArrow: '<img src="/img/reviews/arrow_up_white.png">',
 		nextArrow: '<img src="/img/reviews/arrow_down_white.png">'
   });
-})
-$(document).ready(function () {
 	$('#burger').click(function (event) {
 		$('.menu__body').toggleClass('active');
 		$('body').toggleClass('overflow-hidden');
 	});
-});
+	$('.our-team__slider').slick({
+		centerMode: true,
+		centerPadding: '60px',
+		slidesToShow: 1,
+		variableWidth: true,
+		arrows: false,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {	
+					centerMode: true,
+					centerPadding: '40px',
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					centerMode: true,
+					centerPadding: '40px',
+					slidesToShow: 1
+				}
+			}
+		]
+	});
+})
