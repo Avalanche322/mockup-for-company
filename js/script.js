@@ -8,8 +8,8 @@ $(document).ready(function(){
 		slidesToShow: 2,
 		autoplay: true,
 		accessibility: false,
-		prevArrow: '<img src="/img/reviews/arrow_up_white.png">',
-		nextArrow: '<img src="/img/reviews/arrow_down_white.png">'
+		prevArrow: '<img src="img/reviews/arrow_up_white.png">',
+		nextArrow: '<img src="img/reviews/arrow_down_white.png">'
   });
 	$('#burger').click(function (event) {
 		$('.menu__body').toggleClass('active');
