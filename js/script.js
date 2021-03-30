@@ -9,7 +9,16 @@ $(document).ready(function(){
 		autoplay: true,
 		accessibility: false,
 		prevArrow: '<img src="img/reviews/arrow_up_white.png">',
-		nextArrow: '<img src="img/reviews/arrow_down_white.png">'
+		nextArrow: '<img src="img/reviews/arrow_down_white.png">',
+		responsive: [
+			{
+				breakpoint: 640,
+				settings: {
+					slidesToShow: 1,
+					centerMode: true,
+				}
+			}
+		]
   });
 	$('#burger').click(function (event) {
 		$('.menu__body').toggleClass('active');

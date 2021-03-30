@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/icofont.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
-	<link href="node_modules/video.js/dist/video-js.min.css" rel="stylesheet" />
+	<link href="../node_modules/video.js/dist/video-js.min.css" rel="stylesheet" />
 	<title>Portfolio</title>
 </head>
 <body>
@@ -52,40 +52,34 @@
 			</div>
 		</header>
 		<main><!--Content-->
-			<section><!--Hero-->
-				<div class=" w-full">
-					<div class="hero__gradient-bg">
-						<img class="w-full object-cover h-screen" src="img/hero/hero.png" alt="">
-						<div class="absolute z-10 top-1/4 w-full">
-							<div class="lg:container lg:px-12 px-5">
-								<div class="md:flex justify-between text-white">
-									<div class=" max-w-xl">
-										<h2 class="text-6xl leading-14 uppercase font-bold">lorem Ipsum Dolor sit amet</h2>
-										<p class="text-lg leading-9">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-											incididunt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc
-											laboris nisi ut aliquip ex ea commodo consequat.
-										</p>
-										<div class="flex mt-9">
-											<a class="button bg-blue-dark px-11" href="">Buy now</a>
-											<a class="button bg-white text-blue-dark font-bold px-7 ml-7" href="">Try for free</a>
-										</div>
-									</div>
-									<div class="max-w-xl max-h-80 hero__bg-img">
-										<video id="my-video" class="video-js vjs-big-play-centered" controls preload="auto" width="570" height="320" poster="img/hero/video/prevue.png"
-											data-setup="{}">
-											<source src="img/hero/video/Welcome to Our Office.mp4" type="video/mp4" />
-											<p class="vjs-no-js">
-												To view this video please enable JavaScript, and consider upgrading to a
-												web browser that
-											</p>
-										</video>
-									</div>
+			<section><!--Hero-->			
+				<div class="hero__gradient-bg xl:pt-60 xl:pb-44 pt-40 pb-28">	
+					<div class="xl:container lg:px-12 px-5">
+						<div class="flex xl:flex-row flex-col xl:justify-between items-center text-white">
+							<div class="max-w-xl">
+								<h2 class="text-6xl leading-14 uppercase font-bold">lorem Ipsum Dolor sit amet</h2>
+								<p class="text-lg leading-9">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+									incididunt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc
+									laboris nisi ut aliquip ex ea commodo consequat.
+								</p>
+								<div class="flex mt-9">
+									<a class="button bg-blue-dark px-11" href="">Buy now</a>
+									<a class="button bg-white text-blue-dark font-bold px-7 ml-7" href="">Try for free</a>
 								</div>
+							</div>
+							<div class="xl:mt-0 mt-20">
+								<video id="my-video" class="video-js vjs-big-play-centered max-w-xl max-h-80" controls preload="auto" poster="img/hero/video/prevue.png"
+									data-setup="{}">
+									<source src="img/hero/video/Welcome to Our Office.mp4" type="video/mp4" />
+									<p class="vjs-no-js">
+										To view this video please enable JavaScript, and consider upgrading to a
+										web browser that
+									</p>
+								</video>
 							</div>
 						</div>
 					</div>
-					
-				</div>
+				</div>	
 			</section>	
 			<section><!--Easy & Useful-->
 				<div class="lg:container lg:px-12 px-5">
@@ -238,61 +232,51 @@
 			</section>
 			<section><!--Reviews-->
 				<div class="w-full">
-					<div class="reviews__gradient-bg">
-						<img class="w-full object-cover lg:h-auto h-screen" src="img/reviews/reviews_bg.png" alt="">
-						<div class="absolute top-1/4 z-10 w-full">
-							<div class="lg:container lg:px-12 px-5">
-								<div class="flex justify-between">
-									<div class="max-w-xl top-1/4 text-white">
-										<h2 class="text-5xl leading-tight font-semibold">
-											What our customers have to say about us.</h2>
-										<p class="leading-6 font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-										<div class="flex mt-20">
-											<a class="button bg-blue-dark px-11 leading-tight font-bold" href="">Get started</a>
+					<div class="reviews__gradient-bg pt-32 pb-10">
+						<div class="xl:container lg:px-12 px-5">
+							<div class="flex xl:flex-row flex-col
+							 justify-between">
+								<div class="max-w-xl top-1/4 text-white">
+									<h2 class="text-5xl leading-tight font-semibold">
+										What our customers have to say about us.</h2>
+									<p class="leading-6 font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+									<div class="flex mt-20">
+										<a class="button bg-blue-dark px-11 leading-tight font-bold" href="">Get started</a>
+									</div>
+								</div>
+								<div class="reviews__slider xl:-mt-24">
+									<div class="reviews__slider-item flex items-center sm:p-5 p-2">
+										<img class="xl:mr-12 mr-2" src="img/reviews/man1.png" alt="">
+										<div class="bg-white rounded-md py-8 pl-8 md:pr-16 max-w-2xl">
+											<h4 class="text-lg leading-6 font-bold">John Doe</h4>
+											<p class="leading-6 italic text-gray mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
 										</div>
 									</div>
-									<div class="reviews__slider -mt-24">
-										<div class="reviews__slider-item flex items-center p-5">
-											<div class="w-16 h-16 mr-12">
-												<img class="block w-full" src="img/reviews/man1.png" alt="">
-											</div>
-											<div class="bg-white rounded-md py-8 pl-8 pr-16 max-w-2xl max-h-40">
-												<h4 class="text-lg leading-6 font-bold">John Doe</h4>
-												<p class="leading-6 italic text-gray mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
-											</div>
+									<div class="reviews__slider-item flex items-center sm:p-5 p-2">
+											<img class="xl:mr-12 mr-2" src="img/reviews/woman1.png" alt="">
+										<div class="bg-white rounded-md py-8 pl-8 pr-16 max-w-2xl">
+											<h4 class="text-lg leading-6 font-bold">Khalessi</h4>
+											<p class="leading-6 italic text-gray mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+												eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+												ullamco laboris nisi ut aliquip ex ea</p>
 										</div>
-										<div class="reviews__slider-item flex items-center p-5">
-											<div class="w-16 h-16 mr-12">
-												<img class="block w-full" src="img/reviews/woman1.png" alt="">
-											</div>
-											<div class="bg-white rounded-md py-8 pl-8 pr-16 max-w-2xl max-h-40">
-												<h4 class="text-lg leading-6 font-bold">Khalessi</h4>
-												<p class="leading-6 italic text-gray mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-													eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-													ullamco laboris nisi ut aliquip ex ea</p>
-											</div>
+									</div>
+									<div class="reviews__slider-item flex items-center sm:p-5 p-2">
+											<img class="xl:mr-12 mr-2" src="img/reviews/man1.png" alt="">
+										<div class="bg-white rounded-md py-8 pl-8 pr-16 max-w-2xl">
+											<h4 class="text-lg leading-6 font-bold">John Doe</h4>
+											<p class="leading-6 italic text-gray mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+												eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+												ullamco laboris nisi ut aliquip ex ea</p>
 										</div>
-										<div class="reviews__slider-item flex items-center p-5">
-											<div class="w-16 h-16 mr-12">
-												<img class="block w-full" src="img/reviews/man1.png" alt="">
-											</div>
-											<div class="bg-white rounded-md py-8 pl-8 pr-16 max-w-2xl max-h-40">
-												<h4 class="text-lg leading-6 font-bold">John Doe</h4>
-												<p class="leading-6 italic text-gray mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-													eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-													ullamco laboris nisi ut aliquip ex ea</p>
-											</div>
-										</div>
-										<div class="reviews__slider-item flex items-center p-5">
-											<div class="w-16 h-16 mr-12">
-												<img class="block w-full" src="img/reviews/woman1.png" alt="">
-											</div>
-											<div class="bg-white rounded-md py-8 pl-8 pr-16 max-w-2xl max-h-40">
-												<h4 class="text-lg leading-6 font-bold">Khalessi</h4>
-												<p class="leading-6 italic text-gray mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-													eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-													ullamco laboris nisi ut aliquip ex ea</p>
-											</div>
+									</div>
+									<div class="reviews__slider-item flex items-center sm:p-5 p-2">
+										<img class="xl:mr-12 mr-2" src="img/reviews/woman1.png" alt="">
+										<div class="bg-white rounded-md py-8 pl-8 pr-16 max-w-2xl">
+											<h4 class="text-lg leading-6 font-bold">Khalessi</h4>
+											<p class="leading-6 italic text-gray mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+												eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+												ullamco laboris nisi ut aliquip ex ea</p>
 										</div>
 									</div>
 								</div>
@@ -446,7 +430,7 @@
 			</div>
 		</footer>
 	</div>
-<script src="node_modules/video.js/dist/video.min.js"></script>
+<script src="../node_modules/video.js/dist/video.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/script.js"></script>
