@@ -63,13 +63,13 @@
 									laboris nisi ut aliquip ex ea commodo consequat.
 								</p>
 								<div class="flex mt-9">
-									<a class="button bg-blue-dark px-11" href="">Buy now</a>
-									<a class="button bg-white text-blue-dark font-bold px-7 ml-7" href="">Try for free</a>
+									<a class="button bg-blue-dark sm:px-11 px-3" href="">Buy now</a>
+									<a class="button bg-white text-blue-dark font-bold sm:px-7 px-2 ml-7" href="">Try for free</a>
 								</div>
 							</div>
 							<div class="xl:mt-0 mt-20">
-								<video id="my-video" class="video-js vjs-big-play-centered max-w-xl max-h-80" controls preload="auto" poster="img/hero/video/prevue.png"
-									data-setup="{}">
+								<video id="my-video" class="video-js vjs-big-play-centered object-cover" controls preload="auto" 
+								data-setup='{"poster" : "img/hero/video/prevue.png"}'>
 									<source src="img/hero/video/Welcome to Our Office.mp4" type="video/mp4" />
 									<p class="vjs-no-js">
 										To view this video please enable JavaScript, and consider upgrading to a
@@ -245,14 +245,14 @@
 									</div>
 								</div>
 								<div class="reviews__slider xl:-mt-24">
-									<div class="reviews__slider-item flex items-center sm:p-5 p-2">
+									<div class="reviews__slider-item ">
 										<img class="xl:mr-12 mr-2" src="img/reviews/man1.png" alt="">
 										<div class="bg-white rounded-md py-8 pl-8 md:pr-16 max-w-2xl">
 											<h4 class="text-lg leading-6 font-bold">John Doe</h4>
 											<p class="leading-6 italic text-gray mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
 										</div>
 									</div>
-									<div class="reviews__slider-item flex items-center sm:p-5 p-2">
+									<div class="reviews__slider-item ">
 											<img class="xl:mr-12 mr-2" src="img/reviews/woman1.png" alt="">
 										<div class="bg-white rounded-md py-8 pl-8 pr-16 max-w-2xl">
 											<h4 class="text-lg leading-6 font-bold">Khalessi</h4>
@@ -261,7 +261,7 @@
 												ullamco laboris nisi ut aliquip ex ea</p>
 										</div>
 									</div>
-									<div class="reviews__slider-item flex items-center sm:p-5 p-2">
+									<div class="reviews__slider-item">
 											<img class="xl:mr-12 mr-2" src="img/reviews/man1.png" alt="">
 										<div class="bg-white rounded-md py-8 pl-8 pr-16 max-w-2xl">
 											<h4 class="text-lg leading-6 font-bold">John Doe</h4>
@@ -270,7 +270,7 @@
 												ullamco laboris nisi ut aliquip ex ea</p>
 										</div>
 									</div>
-									<div class="reviews__slider-item flex items-center sm:p-5 p-2">
+									<div class="reviews__slider-item">
 										<img class="xl:mr-12 mr-2" src="img/reviews/woman1.png" alt="">
 										<div class="bg-white rounded-md py-8 pl-8 pr-16 max-w-2xl">
 											<h4 class="text-lg leading-6 font-bold">Khalessi</h4>
@@ -291,30 +291,58 @@
 						<h3 class="text-5xl leading-tight font-semibold text-blue-dark">Our Team</h3>
 						<p class="leading-6 text-gray-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
 					</div>
-					<div class="our-team__slider mt-20">
-						<div class="our-team__slider-item flex flex-col items-center">
-							<div>
-								<img src="img/team/first.png" alt="">
+					<div class="our-team__slider-img mt-20">
+						<div>
+							<div class="w-24 h-24 our-team__slider-img-item">
+								<img class="block w-full" data-lazy="img/team/first.png" alt="">
+							</div>					
+						</div>
+						<div>
+							<div class="w-24 h-24 our-team__slider-img-item">
+								<img class="block w-full" data-lazy="img/team/second.png" alt="">
+							</div>	
+						</div>
+						<div>
+							<div class="w-24 h-24 our-team__slider-img-item">
+								<img class="w-full" data-lazy="img/team/third.png" alt="">
+							</div>			
+						</div>
+						<div>
+							<div class="w-24 h-24 our-team__slider-img-item">
+								<img class="block w-full" data-lazy="img/team/first.png" alt="">
 							</div>
-							<div>
+						</div>
+						<div>
+							<div class="w-24 h-24 our-team__slider-img-item">
+								<img class="block w-full" data-lazy="img/team/second.png" alt="">
+							</div>
+						</div>
+						<div>
+							<div class="w-24 h-24 our-team__slider-img-item">
+								<img class="w-full" data-lazy="img/team/third.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="our-team__slider-content mt-10">
+						<div>
+							<div class="max-w-2xl">
 								<h4 class="text-lg leading-6 font-bold text-blue-dark">Sophie Turner</h4>
-								<p class="leading-6 text-gray-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
-								<div class="text-xl leading-6 text-gray-dark">
-									<a href=""><i class="fab fa-twitter mr-7"></i></a>
-									<a href=""><i class="fab fa-facebook-f mr-7"></i></a>
-									<a href=""><i class="fab fa-linkedin-in mr-7"></i></a>
-									<a href=""><i class="fab fa-dribbble mr-7"></i></a>
+								<p class="leading-6 text-gray-dark mt-5 mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magnaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt</p>
+								<div class="our-team__slider-content-social">
+									<a href=""><i class="fab fa-twitter"></i></a>
+									<a href=""><i class="fab fa-facebook-f"></i></a>
+									<a href=""><i class="fab fa-linkedin-in"></i></a>
+									<a href=""><i class="fab fa-dribbble"></i></a>
 									<a href=""><i class="fab fa-behance"></i></a>
 								</div>
 							</div>
 						</div>
-						<div class="our-team__slider-item flex flex-col items-center">
-							<div>
-								<img src="img/team/second.png" alt="">
-							</div>
-							<div>
-								<h4 class="text-lg leading-6 font-bold text-blue-dark">Sophie Turner</h4>
-								<p class="leading-6 text-gray-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						<div>
+							<div class="max-w-2xl">
+								<h4 class="text-lg leading-6 font-bold text-blue-dark">Mark Turner</h4>
+								<p class="leading-6 text-gray-dark mt-5 mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 									tempor incididunt ut labore et dolore magnaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
 									eiusmod tempor incididunt</p>
 								<div class="text-xl leading-6 text-gray-dark">
@@ -326,13 +354,10 @@
 								</div>
 							</div>
 						</div>
-						<div class="our-team__slider-item flex flex-col items-center">
-							<div>
-								<img src="img/team/third.png" alt="">
-							</div>
-							<div>
-								<h4 class="text-lg leading-6 font-bold text-blue-dark">Sophie Turner</h4>
-								<p class="leading-6 text-gray-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						<div>
+							<div class="max-w-2xl">
+								<h4 class="text-lg leading-6 font-bold text-blue-dark">Lusi Turner</h4>
+								<p class="leading-6 text-gray-dark mt-5 mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 									tempor incididunt ut labore et dolore magnaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
 									eiusmod tempor incididunt</p>
 								<div class="text-xl leading-6 text-gray-dark">

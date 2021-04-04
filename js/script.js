@@ -2,6 +2,11 @@ $(document).ready(function(){
 	$('.spoiler__title').click(function(event){
 		$(this).toggleClass('block').next().slideToggle("slow")
 	});
+	$('#burger').click(function (event) {
+		$('.menu__body').toggleClass('active');
+		$('body').toggleClass('overflow-hidden');
+	});
+
 	$('.reviews__slider').slick({
 		vertical: true,
 		verticalSwiping: true,
@@ -20,30 +25,32 @@ $(document).ready(function(){
 			}
 		]
   });
-	$('#burger').click(function (event) {
-		$('.menu__body').toggleClass('active');
-		$('body').toggleClass('overflow-hidden');
-	});
-	$('.our-team__slider').slick({
+
+	$('.our-team__slider-content').slick({
 		centerMode: true,
-		centerPadding: '60px',
 		slidesToShow: 1,
-		variableWidth: true,
+		slidesToScroll: 1,
 		arrows: false,
+		fade: true,
+		accessibility: false,
+		asNavFor: '.our-team__slider-img',
+		zIndex: 10,
+	});
+	$('.our-team__slider-img').slick({
+		centerMode: true,
+		slidesToShow:3,
+		slidesToScroll: 1,
+		asNavFor: '.our-team__slider-content',
+		accessibility: false,
+		arrows: false,
+		focusOnSelect: true,
+		zIndex: 10,
+		centerPadding: '40px',
+		//variableWidth: true
 		responsive: [
 			{
-				breakpoint: 768,
-				settings: {	
-					centerMode: true,
-					centerPadding: '40px',
-					slidesToShow: 3
-				}
-			},
-			{
-				breakpoint: 480,
+				breakpoint: 732,
 				settings: {
-					centerMode: true,
-					centerPadding: '40px',
 					slidesToShow: 1
 				}
 			}

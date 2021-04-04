@@ -14,28 +14,28 @@ html{
 	scroll-behavior: smooth;
 }
 .button{
-	@apply block max-w-max leading-tight uppercase shadow-3xl rounded-md py-5 transform active:translate-y-1 active:shadow-none transition-animation-150
+	@apply block max-w-max leading-tight uppercase shadow-3xl rounded-md py-5 transform active:translate-y-1 active:shadow-none transition-animation-150;
 }
 
 /*=====================================Header========================================================*/
 .menu__link{
-	@apply md:hover:text-blue-dark transition-animation-150 md:hover:text-opacity-100 hover:text-opacity-50 hover:text-white
+	@apply md:hover:text-blue-dark transition-animation-150 md:hover:text-opacity-100 hover:text-opacity-50 hover:text-white;
 }
 .sing__up{
-	@apply block max-w-xs border border-white text-xl leading-6 md:px-4 md:py-1 py-2 md:text-sm md:hover:text-blue-dark md:hover:border-blue-dark transition-animation-150 md:mt-0 mt-9 md:mx-0 mx-auto md:hover:text-opacity-100 hover:text-opacity-50 hover:text-white md:hover:border-white md:hover:border-opacity-100 hover:border-opacity-50
+	@apply block max-w-xs border border-white text-xl leading-6 md:px-4 md:py-1 py-2 md:text-sm md:hover:text-blue-dark md:hover:border-blue-dark transition-animation-150 md:mt-0 mt-9 md:mx-0 mx-auto md:hover:text-opacity-100 hover:text-opacity-50 hover:text-white md:hover:border-white md:hover:border-opacity-100 hover:border-opacity-50;
 }
 header.sticky{
-	@apply bg-blue-dark fixed md:py-5 transition-animation-150
+	@apply bg-blue-dark fixed md:py-5 transition-animation-150;
 }
 header.sticky .menu__link{
-	@apply hover:text-opacity-50 hover:text-white
+	@apply hover:text-opacity-50 hover:text-white;
 }
 header.sticky .sing__up{
-	@apply hover:text-opacity-50 hover:text-white hover:border-white hover:border-opacity-50
+	@apply hover:text-opacity-50 hover:text-white hover:border-white hover:border-opacity-50;
 }
 /*=====================================Hero========================================================*/
 .transition-animation-150{
-	@apply transition-all ease-in-out duration-150
+	@apply transition-all ease-in-out duration-150;
 }
 
 .hero__gradient-bg{
@@ -46,10 +46,45 @@ header.sticky .sing__up{
 	width: 100%;
 	height: 100%;
 }
-
+.video-js{
+	@apply relative sm:max-w-lg sm:max-h-72 border border-blue-dark rounded-md !important;
+}
+.vjs-poster {
+	@apply bg-auto border-blue-dark rounded-md !important;
+}
+.vjs-poster::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0.9;
+	background-color: #fff;
+}
+.video-js .vjs-big-play-button{
+	@apply w-16 h-16 bg-blue-dark border rounded-md border-none hover:opacity-80 transition-animation-150 !important;
+}
+.vjs-big-play-button .vjs-icon-placeholder:before{
+	@apply mt-3 !important;
+}
+.video-js .vjs-big-play-button::before{
+	content: 'Watch the video';
+	display: inline-block;
+	width: 115px !important;
+	position: relative;
+	top: 50px;
+	right: 25px;
+	font-family: Raleway;
+	font-size: 12px;
+	line-height: 1.2;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #061e37;
+}
 /*=====================================Easy & Useful========================================================*/
 .easy-and-useful__material-icon{
-	@apply w-16 h-16 bg-white rounded-full text-center  pt-5
+	@apply w-16 h-16 bg-white rounded-full text-center  pt-5;
 }
 .material-icons.easy-and-useful__material-icon{
 	font-size: 30px;
@@ -61,13 +96,16 @@ header.sticky .sing__up{
 }
 /*=====================================Reviews========================================================*/
 .reviews__slider .slick-list{
-	@apply overflow-hidden
+	@apply overflow-hidden;
 }
 .reviews__slider .slick-arrow {
-	@apply block w-12 mx-auto cursor-pointer text-none
+	@apply block w-12 mx-auto cursor-pointer text-none;
 }
 .reviews__slider .slick-arrow:hover{
-	@apply opacity-60 transition-animation-150
+	@apply opacity-60 transition-animation-150;
+}
+.reviews__slider-item{
+	@apply flex items-center sm:p-5 p-2;
 }
 .reviews__gradient-bg{
 	position: relative;
@@ -82,39 +120,41 @@ header.sticky .sing__up{
 	background-color: #1de9b6;
 }
 /*=====================================Our Team========================================================*/
-.our-team__slider .slick-track{
-	@apply flex
+.our-team__slider-img .slick-track{
+	@apply flex;
 }
-.our-team__slider-item{
-	@apply max-w-md
+.our-team__slider-img .slick-list{
+	@apply overflow-hidden max-w-2xl mx-auto;
 }
-.our-team__slider .slick-list{
-	@apply overflow-hidden
+.our-team__slider-img .slick-slide{
+	@apply flex justify-center items-center;
 }
-/*=====================================Footer========================================================*/
-.footer__adition-menu li::before{
-	content: '';
-	display: inline-block;
-	margin: 0px 10px 3px 0px;
-	width: 5px;
-	height: 5px;
-	background: rgba(255, 255, 255, 1);
-	border-radius: 50%;
-	
+.our-team__slider-img .our-team__slider-img-item{
+	@apply opacity-20;
 }
-.footer__social a{
-	@apply mini-sm:mr-7 mr-2 opacity-20 hover:opacity-100 transition-animation-150
+.our-team__slider-img .slick-slide.slick-center  .our-team__slider-img-item {
+	@apply opacity-100 w-40 h-40;
 }
-.footer__social a:last-child{
-	@apply mr-0
+
+.our-team__slider-content .slick-track{
+	@apply flex;
+}
+.our-team__slider-content .slick-slide{
+	@apply flex justify-center items-center;
+}
+.our-team__slider-content-social a{
+	@apply text-xl leading-6 text-gray-dark mini-sm:mr-7 mr-2 hover:text-blue-dark transition-animation-150;
+}
+.our-team__slider-content-social a:last-child{
+	@apply mr-0;
 }
 /*=====================================Contact Us========================================================*/
 .contact-us__form .contact-us__form-item{
-	@apply border border-blue-dark py-4 pl-4 rounded-md w-full
+	@apply border border-blue-dark py-4 pl-4 rounded-md w-full;
 }
 .contact-us__form input::placeholder, 
 .contact-us__form textarea::placeholder {
-	@apply text-blue-dark leading-7 font-medium font-body
+	@apply text-blue-dark leading-7 font-medium font-body;
 }
 .contact-us__form-subscribe{
   position: relative;
@@ -173,13 +213,30 @@ header.sticky .sing__up{
   text-decoration-color: #363839;
   transition: clip-path 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
+/*=====================================Footer========================================================*/
+.footer__adition-menu li::before{
+	content: '';
+	display: inline-block;
+	margin: 0px 10px 3px 0px;
+	width: 5px;
+	height: 5px;
+	background: rgba(255, 255, 255, 1);
+	border-radius: 50%;
+	
+}
+.footer__social a{
+	@apply mini-sm:mr-7 mr-2 opacity-20 hover:opacity-100 transition-animation-150;
+}
+.footer__social a:last-child{
+	@apply mr-0;
+}
 /*=====================================Adaptation========================================================*/
 @media(max-width:768px){
 .menu__body{
-	@apply fixed -top-full left-0 w-full h-full bg-blue-dark transition-all duration-700 overflow-auto pt-40 px-7 pb-7 text-center
+	@apply fixed -top-full left-0 w-full h-full bg-blue-dark transition-all duration-700 overflow-auto pt-40 px-7 pb-7 text-center;
 }
 .menu__body.active{
-	@apply top-0
+	@apply top-0;
 }
 }
 @media(min-width: 420px){
