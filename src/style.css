@@ -16,7 +16,9 @@ html{
 .button{
 	@apply block max-w-max leading-tight uppercase shadow-3xl rounded-md py-5 transform active:translate-y-1 active:shadow-none transition-animation-150;
 }
-
+.transition-animation-150{
+	@apply transition-all ease-in-out duration-150;
+}
 /*=====================================Header========================================================*/
 .menu__link{
 	@apply md:hover:text-blue-dark transition-animation-150 md:hover:text-opacity-100 hover:text-opacity-50 hover:text-white;
@@ -34,10 +36,6 @@ header.sticky .sing__up{
 	@apply hover:text-opacity-50 hover:text-white hover:border-white hover:border-opacity-50;
 }
 /*=====================================Hero========================================================*/
-.transition-animation-150{
-	@apply transition-all ease-in-out duration-150;
-}
-
 .hero__gradient-bg{
 	background-image:linear-gradient(-53.0deg, rgba(0, 184, 212,0.9) -11%, rgba(29, 233, 182,0.9) 111%) , 
 	url('../img/hero/hero.png');
@@ -47,7 +45,7 @@ header.sticky .sing__up{
 	height: 100%;
 }
 .video-js{
-	@apply relative sm:max-w-lg sm:max-h-72 border border-blue-dark rounded-md !important;
+	@apply relative border border-blue-dark rounded-md !important;
 }
 .vjs-poster {
 	@apply bg-auto border-blue-dark rounded-md !important;

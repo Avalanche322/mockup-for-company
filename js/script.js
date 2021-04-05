@@ -5,8 +5,18 @@ $(document).ready(function(){
 	$('#burger').click(function (event) {
 		$('.menu__body').toggleClass('active');
 		$('body').toggleClass('overflow-hidden');
+		$(this).toggleClass('fa-times')
 	});
-
+	$(function(){
+		$('#sing__up-btn').click(function (event) {
+			$('#modal-form').removeClass('hidden');
+			$('body').addClass('overflow-hidden');
+		});
+		$('#modal-form__close').click(function (event) {
+			$('#modal-form').addClass('hidden');
+			$('body').removeClass('overflow-hidden');
+		});
+	});
 	$('.reviews__slider').slick({
 		vertical: true,
 		verticalSwiping: true,

@@ -25,33 +25,69 @@
 						</h1>
 					</div>
 					<div class="md:hidden float-right z-10">
-						<i class="fas fa-bars text-xl" id="burger"></i>
+						<i class="fas fa-bars text-xl transition-all duration-700" id="burger"></i>
 					</div>
 					<nav class="md:flex items-center w-8/12 menu__body">
 						<ul class="md:flex mr-auto leading-6 font-semibold md:text-base text-2xl">
 							<li class="menu__link">
-								<a href="">Home</a>
+								<a href="#">Home</a>
 							</li>	
 							<li class="menu__link lg:ml-12 md:ml-6 md:mt-0 mt-9">
-								<a href="">Service</a>
+								<a href="#">Service</a>
 							</li>	
 							<li class="menu__link lg:ml-12 md:ml-6 md:mt-0 mt-9">
-								<a href="">Extension</a>
+								<a href="#">Extension</a>
 							</li>	
 							<li class="menu__link lg:ml-12 md:ml-6 md:mt-0 mt-9">
-								<a href="">Pricing</a>
+								<a href="#">Pricing</a>
 							</li>	
 							<li class="menu__link lg:ml-12 md:ml-6 md:mt-0 mt-9">
-								<a href="">Help</a>
+								<a href="#">Help</a>
 							</li>	
 						</ul>
-						<a href=""class="sing__up">
+						<a href="#" class="sing__up" id="sing__up-btn">
 							sign up</a>
 					</nav>
 				</div>
 			</div>
 		</header>
 		<main><!--Content-->
+			<div id="modal-form" class="hidden absolute z-30 left-0 top-0 w-full h-full bg-blue-dark bg-opacity-40 md:px-0 sm:px-10 px-5 transition-all ease-in-out duration-1000">
+				<div class="relative mx-auto w-full md:w-1/2 lg:w-1/3 m-8">
+					<div class="shadow-lg bg-white rounded-lg p-8">
+						<div class="flex justify-end mb-6">
+							<button class="focus:outline-none" id="modal-form__close">
+								<span class="mr-2 text-lg">Close</span>
+								<span>
+									<i class="fa fa-times text-xl origin-center transform hover:rotate-45 transition-animation-150"></i>
+								</span>
+							</button>
+						</div>			
+						<h2 class="text-center text-2xl">Login</h2>			
+						<form class="pt-6 pb-2 my-2">
+							<div class="mb-4">
+								<label class="block text-sm font-bold mb-2" for="email">
+									Email Address
+								</label>
+								<input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="email"
+									type="text" placeholder="Email Address">
+							</div>
+							<div class="mb-6">
+								<label class="block text-sm font-bold mb-2" for="password">
+									Password
+								</label>
+								<input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker mb-3" id="password"
+									type="password" placeholder="Password">
+							</div>
+							<div class="block md:flex items-center justify-between">						
+									<a class="block max-w-max leading-tight uppercase shadow-3xl rounded-md py-3 px-4 transform active:translate-y-1 active:shadow-none transition-animation-150 bg-blue-dark text-white cursor-pointer">
+										Sign In</a>
+									<a href="#" class="block mt-4 md:mt-0 hover:text-gray transition-animation-150">Forget Password?</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
 			<section><!--Hero-->			
 				<div class="hero__gradient-bg xl:pt-60 xl:pb-44 pt-40 pb-28">	
 					<div class="xl:container lg:px-12 px-5">
@@ -68,8 +104,7 @@
 								</div>
 							</div>
 							<div class="xl:mt-0 mt-20">
-								<video id="my-video" class="video-js vjs-big-play-centered object-cover" controls preload="auto" 
-								data-setup='{"poster" : "img/hero/video/prevue.png"}'>
+								<video id="my-video" class="video-js vjs-big-play-centered object-cover sm:max-w-xl sm:max-h-72 max-w-xs max-h-52" controls preload="auto" data-setup='{"poster" : "img/hero/video/prevue.png"}'>
 									<source src="img/hero/video/Welcome to Our Office.mp4" type="video/mp4" />
 									<p class="vjs-no-js">
 										To view this video please enable JavaScript, and consider upgrading to a
