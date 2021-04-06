@@ -28,7 +28,7 @@ module.exports = {
 		  },
 		  lime: {
 			  DEFAULT: '#1de9b6'
-		  }
+		  },
 	  },
     extend: {
 		container: {

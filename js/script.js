@@ -1,3 +1,16 @@
+/*Preloader*/
+function loadData() {
+	return new Promise((resolve, reject) => {
+		setTimeout(resolve, 2300);
+	})
+}
+loadData().then(() => {
+	let preloaderEl = document.getElementById('preloader');
+	preloaderEl.classList.add('preloader__hidden');
+	preloaderEl.classList.remove('preloader__visible');
+	$('body').removeClass('loading');
+});
+
 $(document).ready(function(){
 	$('.spoiler__title').click(function(event){
 		$(this).toggleClass('block').next().slideToggle("slow")
@@ -7,6 +20,7 @@ $(document).ready(function(){
 		$('body').toggleClass('overflow-hidden');
 		$(this).toggleClass('fa-times')
 	});
+	/*Modal Sing up*/
 	$(function(){
 		$('#sing__up-btn').click(function (event) {
 			$('#modal-form').removeClass('hidden');
@@ -71,3 +85,4 @@ window.addEventListener('scroll', function(){
 	let header = document.querySelector('header');
 	header.classList.toggle('sticky', window.scrollY > 0);
 });
+
