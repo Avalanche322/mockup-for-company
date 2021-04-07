@@ -29,6 +29,12 @@ module.exports = {
 		  lime: {
 			  DEFAULT: '#1de9b6'
 		  },
+		  brown: {
+			  DEFAULT: '#363839'
+		  },
+		  green: {
+			  success: '#06842c'
+		  }
 	  },
     extend: {
 		container: {
@@ -49,6 +55,7 @@ module.exports = {
 		},
 		fontSize: {
 			'none': '0rem',
+			'xxs': '0.5rem',
 		},
 	 },
   },

@@ -59,6 +59,8 @@ $(document).ready(function(){
 		accessibility: false,
 		asNavFor: '.our-team__slider-img',
 		zIndex: 10,
+		autoplay: true,
+		autoplaySpeed: 2000,
 	});
 	$('.our-team__slider-img').slick({
 		centerMode: true,
@@ -70,7 +72,8 @@ $(document).ready(function(){
 		focusOnSelect: true,
 		zIndex: 10,
 		centerPadding: '40px',
-		//variableWidth: true
+		autoplay: true,
+		autoplaySpeed: 2000,
 		responsive: [
 			{
 				breakpoint: 732,
