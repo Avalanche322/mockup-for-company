@@ -1,4 +1,4 @@
-/*Preloader*/
+/*===================Preloader=========================*/
 function loadData() {
 	return new Promise((resolve, reject) => {
 		setTimeout(resolve, 2300);
@@ -11,26 +11,35 @@ loadData().then(() => {
 	$('body').removeClass('loading');
 });
 
+/*=======================Spoiler for services=============================*/
 $(document).ready(function(){
 	$('.spoiler__title').click(function(event){
 		$(this).toggleClass('block').next().slideToggle("slow")
 	});
+})
+	/*=======================Menu for mobile=============================*/
+$(document).ready(function () {
 	$('#burger').click(function (event) {
 		$('.menu__body').toggleClass('active');
 		$('body').toggleClass('overflow-hidden');
 		$(this).toggleClass('fa-times')
 	});
-	/*Modal Sing up*/
+})
+	/*=======================Modal Sing up=============================*/
+$(document).ready(function () {
 	$(function(){
 		$('#sing__up-btn').click(function (event) {
-			$('#modal-form').removeClass('hidden');
+			$('#modal-form').removeClass('modal-form__hidden').addClass('modal-form__visible');
 			$('body').addClass('overflow-hidden');
 		});
 		$('#modal-form__close').click(function (event) {
-			$('#modal-form').addClass('hidden');
+			$('#modal-form').removeClass('modal-form__visible').addClass('modal-form__hidden');
 			$('body').removeClass('overflow-hidden');
 		});
 	});
+})
+	/*=======================Slider for reviews=============================*/
+$(document).ready(function () {
 	$('.reviews__slider').slick({
 		vertical: true,
 		verticalSwiping: true,
@@ -49,7 +58,9 @@ $(document).ready(function(){
 			}
 		]
   });
-
+})
+	/*=======================Double slider for our team=============================*/
+$(document).ready(function () {
 	$('.our-team__slider-content').slick({
 		centerMode: true,
 		slidesToShow: 1,
@@ -84,8 +95,45 @@ $(document).ready(function(){
 		]
 	});
 })
+/*=======================Sticky header=============================*/
 window.addEventListener('scroll', function(){
 	let header = document.querySelector('header');
 	header.classList.toggle('sticky', window.scrollY > 0);
 });
+/*=======================Animation=============================*/
+const animItems = document.querySelectorAll('._anim-items');
 
+if (animItems.length > 0) {
+	window.addEventListener('scroll', animOnScroll);
+	function animOnScroll() {
+		for (let index = 0; index < animItems.length; index++) {
+			const animItem = animItems[index];
+			const animItemHeight = animItem.offsetHeight;
+			const animItemOffset = offset(animItem).top;
+			const animStart = 4;
+
+			let animItemPoint = window.innerHeight - animItemHeight / animStart;
+			if (animItemHeight > window.innerHeight) {
+				animItemPoint = window.innerHeight - window.innerHeight / animStart;
+			}
+
+			if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
+				animItem.classList.add('_active');
+			} else {
+				if (!animItem.classList.contains('_anim-no-hide')) {
+					animItem.classList.remove('_active');
+				}
+			}
+		}
+	}
+	function offset(el) {
+		const rect = el.getBoundingClientRect(),
+			scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+			scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+		return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+	}
+
+	setTimeout(() => {
+		animOnScroll();
+	}, 1500);
+}

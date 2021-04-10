@@ -57,6 +57,9 @@ module.exports = {
 			'none': '0rem',
 			'xxs': '0.5rem',
 		},
+		 transitionDuration: {
+			 '1200': '1200ms',
+		 }
 	 },
   },
   variants: {

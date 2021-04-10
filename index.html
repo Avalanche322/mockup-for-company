@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,7 +25,7 @@
 	<title>Company Dart</title>
 </head>
 <body class="loading">
-	<!--Preloader-->
+	<!--======================Preloader================================-->
 	<div class="preloader__visible" id="preloader">
 		<div class="transition-loader-inner">
 			<label class="transition-loader-inner__item"></label>
@@ -36,13 +36,14 @@
 			<label class="transition-loader-inner__item"></label>
 		</div>
 	</div>
-	<div class="min-h-screen flex flex-col font-body overflow-hidden"><!--Wrapper-->
+	<!--======================Wrapper================================-->
+	<div class="min-h-screen flex flex-col font-body overflow-hidden">
 		<header class="absolute z-20 w-full md:py-12 py-6 text-white transition-animation-150"><!--Header-->
 			<div class="lg:container lg:px-12 px-5">
 				<div class="flex items-center justify-between">
 					<div class="flex z-10">
 						<div class="mr-2 w-8 h-8">
-							<img class="block w-full" src="img/logo/logo.png" alt="">
+							<img loading="lazy" class="block w-full" src="img/logo/logo.png" alt="">
 						</div>
 						<h1 class="flex flex-col leading-4 font-extrabold uppercase">
 							<span class="font-normal">Dart</span>
@@ -76,14 +77,14 @@
 				</div>
 			</div>
 		</header>
-		<main><!--Content-->
-			<!--Modal Login-->
-			<div id="modal-form" class="hidden absolute z-30 left-0 top-0 w-full h-full bg-blue-dark bg-opacity-40 md:px-0 sm:px-10 px-5 transition-all ease-in-out duration-1000 preloader__visible">
+		<!--======================Main content================================-->
+		<main>
+			<!--======================Modal Login==============================-->
+			<div id="modal-form" class="modal-form__hidden absolute z-30 w-full h-full bg-blue-dark bg-opacity-40 md:px-0 sm:px-10 px-5">
 				<div class="relative mx-auto w-full md:w-1/2 lg:w-1/3 m-8">
 					<div class="shadow-lg bg-white rounded-lg p-8">
 						<div class="flex justify-end mb-6">
 							<button class="focus:outline-none" id="modal-form__close">
-								<span class="mr-2 text-lg">Close</span>
 								<span>
 									<i class="fa fa-times text-xl origin-center transform hover:rotate-45 transition-animation-150"></i>
 								</span>
@@ -114,7 +115,8 @@
 					</div>
 				</div>
 			</div>
-			<section><!--Hero-->			
+			<!--======================Hero==============================-->
+			<section>
 				<div class="hero__gradient-bg xl:pt-60 xl:pb-44 pt-40 pb-28">	
 					<div class="xl:container lg:px-12 px-5">
 						<div class="flex xl:flex-row flex-col xl:justify-between items-center text-white">
@@ -131,7 +133,7 @@
 							</div>
 							<div class="xl:mt-0 mt-20">
 								<video id="my-video" class="video-js vjs-big-play-centered object-cover sm:max-w-lg sm:max-h-72 max-w-xs max-h-52" controls preload="auto" data-setup='{"poster" : "img/hero/video/prevue.png"}'>
-									<source src="img/hero/video/Welcome to Our Office.mp4" type="video/mp4" />
+									<source src="img/hero/video/welcome-to-our-office.mp4" type="video/mp4" />
 									<p class="vjs-no-js">
 										To view this video please enable JavaScript, and consider upgrading to a
 										web browser that
@@ -141,62 +143,64 @@
 						</div>
 					</div>
 				</div>	
-			</section>	
-			<section><!--Easy & Useful-->
+			</section>
+			<!--======================Easy & Useful==============================-->
+			<section>
 				<div class="lg:container lg:px-12 px-5">
-					<div class="text-center max-w-xl mx-auto mt-24">
+					<div class="text-center max-w-xl mx-auto mt-24 _anim-items _anim-no-hide section__title">
 						<h3 class="text-5xl leading-tight font-semibold text-blue-dark">Easy & Useful</h3>
 						<p class="text-2xl leading-tight font-semibold text-gray-light my-2">Project Management Tool</p>
 						<p class="leading-6 text-gray-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
 					</div>
 					<div class="flex text-center mt-24 md:justify-between justify-center flex-wrap md:flex-nowrap">
-						<div class="max-w-sm">
+						<div class="max-w-sm easy-useful__item _anim-items _anim-no-hide">
 							<i class="icofont-ui-calendar text-7xl text-purple"></i>
 							<h4 class="text-xl font-semibold leading-6 text-blue-dark mt-7 mb-2">Title Goes Here</h4>
 							<p class="leading-5 text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</div>
-						<div class="max-w-sm md:mt-0 mt-10">
+						<div class="max-w-sm easy-useful__item _anim-items _anim-no-hide">
 							<i class="icofont-team text-7xl text-blue-light"></i>
 							<h4 class="text-xl font-semibold leading-6 text-blue-dark mt-7 mb-2">Title Goes Here</h4>
 							<p class="leading-5 text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</div>
-						<div class="max-w-sm md:mt-0 mt-10">
+						<div class="max-w-sm easy-useful__item _anim-items _anim-no-hide">
 							<i class="icofont-worker text-7xl text-pink"></i>
 							<h4 class="text-xl font-semibold leading-6 text-blue-dark mt-7 mb-2">Title Goes Here</h4>
 							<p class="leading-5 text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 								incididunt ut labore et dolore magna aliqua.</p>
 						</div>
 					</div>
-					<a class="button bg-lime px-6 mx-auto mt-16 mb-24 text-white font-bold leading-tight" href="">
+					<a class="button bg-lime px-6 mx-auto mt-16 mb-24 text-white font-bold leading-tight easy-useful__btn _anim-items _anim-no-hide" href="">
 						Get started</a>
 				</div>
 				<div class="extra-md:flex text-white">
-					<div class="bg-blue-light w-full py-14 text-center">
+					<div class="bg-blue-light w-full py-14 text-center easy-useful__block _anim-items _anim-no-hide">
 						<i class="material-icons easy-and-useful__material-icon text-blue-light">business</i>
 						<p class="inline-block ml-4 lg:text-left text-xl font-extrabold leading-6">12000+<br/>Business</p>
 					</div>
-					<div class="bg-blue w-full py-14 text-center">
+					<div class="bg-blue w-full py-14 text-center easy-useful__block _anim-items _anim-no-hide">
 						<i class="material-icons easy-and-useful__material-icon text-blue-light">file_download</i>
 						<p class="inline-block ml-4 text-left text-xl font-extrabold leading-6">60000+<br />Downloads</p>
 					</div>
-					<div class="bg-purple w-full py-14 text-center">
+					<div class="bg-purple w-full py-14 text-center easy-useful__block _anim-items _anim-no-hide">
 						<i class="material-icons easy-and-useful__material-icon text-blue-light">person</i>
 						<p class="inline-block ml-4 text-left text-xl font-extrabold leading-6">30000+<br />Free Installs</p>
 					</div>
-					<div class="bg-pink w-full py-14 text-center">
+					<div class="bg-pink w-full py-14 text-center easy-useful__block _anim-items _anim-no-hide">
 						<i class="material-icons easy-and-useful__material-icon text-blue-light">file_download</i>
 						<p class="inline-block ml-4 text-left text-xl font-extrabold leading-6">40000+<br />Pro Users</p>
 					</div>
 				</div>
 			</section>
-			<section><!--Services-->
+			<!--======================Services==============================-->
+			<section>
 				<div class="lg:container lg:px-12 px-5">
-					<div class="text-center max-w-xl mx-auto mt-24">
+					<div class="text-center max-w-xl mx-auto mt-24 _anim-items _anim-no-hide section__title">
 						<h3 class="text-5xl leading-tight font-semibold text-blue-dark">Services</h3>
 						<p class="leading-6 text-gray-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
 					</div>
 					<div class="text-blue-dark mt-12 mb-24">
-						<div class="max-w-3xl mx-auto p-6">
+						<div class="max-w-3xl mx-auto p-6 service__item _anim-items _anim-no-hide">
 							<div class="flex justify-between cursor-pointer spoiler__title">
 								<div class="flex">
 									<i class="material-icons mr-6 service__material-icon">trending_up</i>
@@ -206,13 +210,13 @@
 							</div>
 							<div class="mt-6 spoiler__content hidden">
 							<div class="md:flex">
-								<img src="img/services/statistics.png" alt="">
+								<img loading="lazy" src="img/services/statistics.png" alt="">
 								<p class="leading-6 tracking-wide md:ml-6 md:mt-0 mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<br/><br/>
 								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
 							</div>
 							</div>
 						</div>
-						<div class="max-w-3xl mx-auto p-6">
+						<div class="max-w-3xl mx-auto p-6 service__item _anim-items _anim-no-hide">
 							<div class="flex justify-between cursor-pointer spoiler__title">
 								<div class="flex">
 									<i class="material-icons mr-6 service__material-icon">mail</i>
@@ -222,7 +226,7 @@
 							</div>
 							<div class="mt-6 spoiler__content hidden">
 								<div class="md:flex">
-									<img src="img/services/statistics.png" alt="">
+									<img loading="lazy" src="img/services/statistics.png" alt="">
 									<p class="leading-6 tracking-wide md:ml-6 md:mt-0 mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing
 										elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
 										veniam.<br /><br />
@@ -231,7 +235,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="max-w-3xl mx-auto p-6">
+						<div class="max-w-3xl mx-auto p-6 service__item _anim-items _anim-no-hide">
 							<div class="flex justify-between cursor-pointer spoiler__title">
 								<div class="flex">
 									<i class="material-icons mr-6 service__material-icon">group</i>
@@ -241,7 +245,7 @@
 							</div>
 							<div class="mt-6 spoiler__content hidden">
 								<div class="md:flex">
-									<img src="img/services/statistics.png" alt="">
+									<img loading="lazy" src="img/services/statistics.png" alt="">
 									<p class="leading-6 tracking-wide md:ml-6 md:mt-0 mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing
 										elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
 										veniam.<br /><br />
@@ -250,7 +254,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="max-w-3xl mx-auto p-6">
+						<div class="max-w-3xl mx-auto p-6 service__item _anim-items _anim-no-hide">
 							<div class="flex justify-between cursor-pointer spoiler__title">
 								<div class="flex">
 									<i class="material-icons mr-6 service__material-icon">settings</i>
@@ -260,7 +264,7 @@
 							</div>
 							<div class="mt-6 spoiler__content hidden">
 								<div class="md:flex">
-									<img src="img/services/statistics.png" alt="">
+									<img loading="lazy" src="img/services/statistics.png" alt="">
 									<p class="leading-6 tracking-wide md:ml-6 md:mt-0 mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing
 										elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
 										veniam.<br /><br />
@@ -269,7 +273,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="max-w-3xl mx-auto p-6">
+						<div class="max-w-3xl mx-auto p-6 service__item _anim-items _anim-no-hide">
 							<div class="flex justify-between cursor-pointer spoiler__title">
 								<div class="flex">
 									<i class="material-icons mr-6 service__material-icon">rss_feed</i>
@@ -279,7 +283,7 @@
 							</div>
 							<div class="mt-6 spoiler__content hidden">
 								<div class="md:flex">
-									<img src="img/services/statistics.png" alt="">
+									<img loading="lazy" src="img/services/statistics.png" alt="">
 									<p class="leading-6 tracking-wide md:ml-6 md:mt-0 mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing
 										elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
 										veniam.<br /><br />
@@ -291,13 +295,14 @@
 					</div>
 				</div>
 			</section>
-			<section><!--Reviews-->
+			<!--======================Reviews==============================-->
+			<section>
 				<div class="w-full">
 					<div class="reviews__gradient-bg pt-32 pb-10">
 						<div class="xl:container lg:px-12 px-5">
 							<div class="flex xl:flex-row flex-col
 							 justify-between">
-								<div class="max-w-xl top-1/4 text-white">
+								<div class="max-w-xl top-1/4 text-white reviews__title _anim-items _anim-no-hide">
 									<h2 class="text-5xl leading-tight font-semibold">
 										What our customers have to say about us.</h2>
 									<p class="leading-6 font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
@@ -305,16 +310,16 @@
 										<a class="button bg-blue-dark px-11 leading-tight font-bold" href="">Get started</a>
 									</div>
 								</div>
-								<div class="reviews__slider xl:-mt-24">
+								<div class="reviews__slider xl:-mt-24 _anim-items _anim-no-hide">
 									<div class="reviews__slider-item ">
-										<img class="xl:mr-12 mr-2" src="img/reviews/man1.png" alt="">
+										<img loading="lazy" class="xl:mr-12 mr-2" src="img/reviews/man1.png" alt="">
 										<div class="bg-white rounded-md py-8 pl-8 md:pr-16 max-w-2xl">
 											<h4 class="text-lg leading-6 font-bold">John Doe</h4>
 											<p class="leading-6 italic text-gray mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
 										</div>
 									</div>
 									<div class="reviews__slider-item ">
-											<img class="xl:mr-12 mr-2" src="img/reviews/woman1.png" alt="">
+											<img loading="lazy" class="xl:mr-12 mr-2" src="img/reviews/woman1.png" alt="">
 										<div class="bg-white rounded-md py-8 pl-8 pr-16 max-w-2xl">
 											<h4 class="text-lg leading-6 font-bold">Khalessi</h4>
 											<p class="leading-6 italic text-gray mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -323,7 +328,7 @@
 										</div>
 									</div>
 									<div class="reviews__slider-item">
-											<img class="xl:mr-12 mr-2" src="img/reviews/man1.png" alt="">
+											<img loading="lazy" class="xl:mr-12 mr-2" src="img/reviews/man1.png" alt="">
 										<div class="bg-white rounded-md py-8 pl-8 pr-16 max-w-2xl">
 											<h4 class="text-lg leading-6 font-bold">John Doe</h4>
 											<p class="leading-6 italic text-gray mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -332,7 +337,7 @@
 										</div>
 									</div>
 									<div class="reviews__slider-item">
-										<img class="xl:mr-12 mr-2" src="img/reviews/woman1.png" alt="">
+										<img loading="lazy" class="xl:mr-12 mr-2" src="img/reviews/woman1.png" alt="">
 										<div class="bg-white rounded-md py-8 pl-8 pr-16 max-w-2xl">
 											<h4 class="text-lg leading-6 font-bold">Khalessi</h4>
 											<p class="leading-6 italic text-gray mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -346,46 +351,47 @@
 					</div>		
 				</div>
 			</section>
+			<!--======================Our team==============================-->
 			<section class="pb-24"><!--Our team-->
 				<div class="lg:container lg:px-12 px-5 text-center">
-					<div class=" max-w-xl mx-auto mt-24">
+					<div class=" max-w-xl mx-auto mt-24 _anim-items _anim-no-hide section__title">
 						<h3 class="text-5xl leading-tight font-semibold text-blue-dark">Our Team</h3>
 						<p class="leading-6 text-gray-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
 					</div>
-					<div class="our-team__slider-img mt-20">
-						<div>
+					<div class="our-team__slider-img _anim-items _anim-no-hide mt-20">
+						<div><!--Sophie Turner-->
 							<div class="w-24 h-24 our-team__slider-img-item">
-								<img class="block w-full" data-lazy="img/team/first.png" alt="">
+								<img loading="lazy" class="block w-full" src="img/team/first.png" alt="">
 							</div>					
 						</div>
-						<div>
+						<div><!--Mark Turner-->
 							<div class="w-24 h-24 our-team__slider-img-item">
-								<img class="block w-full" data-lazy="img/team/second.png" alt="">
+								<img loading="lazy" class="block w-full" src="img/team/second.png" alt="">
 							</div>	
 						</div>
-						<div>
+						<div><!--Lusi Turner-->
 							<div class="w-24 h-24 our-team__slider-img-item">
-								<img class="w-full" data-lazy="img/team/third.png" alt="">
+								<img loading="lazy" class="w-full" src="img/team/third.png" alt="">
 							</div>			
 						</div>
-						<div>
+						<div><!--Sophie Turner-->
 							<div class="w-24 h-24 our-team__slider-img-item">
-								<img class="block w-full" data-lazy="img/team/first.png" alt="">
+								<img loading="lazy" class="block w-full" src="img/team/first.png" alt="">
 							</div>
 						</div>
-						<div>
+						<div><!--Mark Turner-->
 							<div class="w-24 h-24 our-team__slider-img-item">
-								<img class="block w-full" data-lazy="img/team/second.png" alt="">
+								<img loading="lazy" class="block w-full" src="img/team/second.png" alt="">
 							</div>
 						</div>
-						<div>
+						<div><!--Lusi Turner-->
 							<div class="w-24 h-24 our-team__slider-img-item">
-								<img class="w-full" data-lazy="img/team/third.png" alt="">
+								<img loading="lazy" class="w-full" src="img/team/third.png" alt="">
 							</div>
 						</div>
 					</div>
-					<div class="our-team__slider-content mt-10">
-						<div>
+					<div class="our-team__slider-content _anim-items _anim-no-hide mt-10">
+						<div><!--Sophie Turner-->
 							<div class="max-w-2xl">
 								<h4 class="text-lg leading-6 font-bold text-blue-dark">Sophie Turner</h4>
 								<p class="leading-6 text-gray-dark mt-5 mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -400,7 +406,7 @@
 								</div>
 							</div>
 						</div>
-						<div>
+						<div><!--Mark Turner-->
 							<div class="max-w-2xl">
 								<h4 class="text-lg leading-6 font-bold text-blue-dark">Mark Turner</h4>
 								<p class="leading-6 text-gray-dark mt-5 mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -415,7 +421,7 @@
 								</div>
 							</div>
 						</div>
-						<div>
+						<div><!--Lusi Turner-->
 							<div class="max-w-2xl">
 								<h4 class="text-lg leading-6 font-bold text-blue-dark">Lusi Turner</h4>
 								<p class="leading-6 text-gray-dark mt-5 mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -430,43 +436,93 @@
 								</div>
 							</div>
 						</div>
+						<div><!--Sophie Turner-->
+							<div class="max-w-2xl">
+								<h4 class="text-lg leading-6 font-bold text-blue-dark">Sophie Turner</h4>
+								<p class="leading-6 text-gray-dark mt-5 mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+									eiusmod tempor
+									incididunt ut labore et dolore magnaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt</p>
+								<div class="our-team__slider-content-social">
+									<a href=""><i class="fab fa-twitter"></i></a>
+									<a href=""><i class="fab fa-facebook-f"></i></a>
+									<a href=""><i class="fab fa-linkedin-in"></i></a>
+									<a href=""><i class="fab fa-dribbble"></i></a>
+									<a href=""><i class="fab fa-behance"></i></a>
+								</div>
+							</div>
+						</div>
+						<div><!--Mark Turner-->
+							<div class="max-w-2xl">
+								<h4 class="text-lg leading-6 font-bold text-blue-dark">Mark Turner</h4>
+								<p class="leading-6 text-gray-dark mt-5 mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+									eiusmod
+									tempor incididunt ut labore et dolore magnaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+									eiusmod tempor incididunt</p>
+								<div class="our-team__slider-content-social">
+									<a href=""><i class="fab fa-twitter"></i></a>
+									<a href=""><i class="fab fa-facebook-f"></i></a>
+									<a href=""><i class="fab fa-linkedin-in"></i></a>
+									<a href=""><i class="fab fa-dribbble"></i></a>
+									<a href=""><i class="fab fa-behance"></i></a>
+								</div>
+							</div>
+						</div>
+						<div><!--Sophie Turner-->
+							<div class="max-w-2xl">
+								<h4 class="text-lg leading-6 font-bold text-blue-dark">Lusi Turner</h4>
+								<p class="leading-6 text-gray-dark mt-5 mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+									eiusmod
+									tempor incididunt ut labore et dolore magnaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+									eiusmod tempor incididunt</p>
+								<div class="our-team__slider-content-social">
+									<a href=""><i class="fab fa-twitter"></i></a>
+									<a href=""><i class="fab fa-facebook-f"></i></a>
+									<a href=""><i class="fab fa-linkedin-in"></i></a>
+									<a href=""><i class="fab fa-dribbble"></i></a>
+									<a href=""><i class="fab fa-behance"></i></a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
-			<section class="bg-gray-lighten pt-12 pb-24"><!--Contact Us-->
+			<!--======================Contact Us==============================-->
+			<section class="bg-gray-lighten pt-12 pb-24">
 				<div class="lg:container lg:px-12 px-5 text-center">
-					<div class=" max-w-xl mx-auto">
+					<div class="max-w-xl mx-auto _anim-items _anim-no-hide section__title">
 						<h3 class="text-5xl leading-tight font-semibold text-blue-dark mb-3">Contact Us</h3>
 						<p class="leading-6 text-blue-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
 					</div>
-					<form class="sm:max-w-xl max-w-xs mx-auto mt-12 contact-us__form" action="">
+					<form class="sm:max-w-xl max-w-xs mx-auto mt-12 contact-us__form" action="#">
 						<div class="sm:flex">
-							<input class="contact-us__form-item sm:mr-10" placeholder="First Name" type="text" required>
-							<input class="contact-us__form-item sm:mt-0 mt-5" placeholder="Last Name" type="text" required>
+							<input class="contact-us__form-item _anim-items _anim-no-hide sm:mr-10" placeholder="First Name" type="text" required>
+							<input class="contact-us__form-item _anim-items _anim-no-hide sm:mt-0 mt-5" placeholder="Last Name" type="text" required>
 						</div>
 						<div class="my-5 sm:flex">
-							<input class="contact-us__form-item sm:mr-10" placeholder="Email"  type="email" required>
-							<input class="contact-us__form-item sm:mt-0 mt-5" placeholder="Phone" type="tel" required>
+							<input class="contact-us__form-item _anim-items _anim-no-hide sm:mr-10" placeholder="Email"  type="email" required>
+							<input class="contact-us__form-item _anim-items _anim-no-hide sm:mt-0 mt-5" placeholder="Phone" type="tel" required>
 						</div>
 						<div>
-							<textarea class="contact-us__form-item h-36 resize-none" placeholder="Message" name="Message" class="w-full h-36" required></textarea>
+							<textarea class="contact-us__form-item _anim-items _anim-no-hide h-36 resize-none w-full" placeholder="Message" name="Message" required></textarea>
 						</div>
 						<div class="sm:flex justify-between mt-5 items-center relative">
-							<div class="flex items-center">
+							<div class="flex items-center contact-us__form-subscribe-container _anim-items _anim-no-hide">
 								<input type="checkbox" class="contact-us__form-subscribe" name="subscribe" id="subscribe" value="subscribe">
 								<label for="subscribe" class="contact-us__form-subscribe-text" data-content="subscribe to the newsletter">subscribe to the newsletter</label>
 							</div>
 							<a class="block sm:mt-0 mt-4 bg-lime text-white font-medium text-base leading-tight uppercase py-4 px-11 rounded-md shadow-3xl transform active:translate-y-1 active:shadow-none 
-							transition-animation-150" href="">send</a>
+							transition-animation-150 contact-us__form-btn _anim-items _anim-no-hide" href="">send</a>
 						</div>
 					</form>
 				</div>
 			</section>
 		</main>
-		<footer class="bg-blue-dark md:py-24 py-10"><!--Footer-->
+		<!--======================Footer================================-->
+		<footer class="bg-blue-dark md:py-24 py-10">
 			<div class="lg:container lg:px-12 px-5 text-white">
 				<div class="sm:flex justify-between">
-					<div class="flex">
+					<div class="footer__logo flex _anim-items _anim-no-hide">
 						<div class="mr-2 w-8 h-8">
 							<img class="block w-full" src="img/logo/logo.png" alt="">
 						</div>
@@ -475,7 +531,7 @@
 							service manager
 						</h2>
 					</div>
-					<ul class="mini-sm:flex leading-6 font-semibold sm:mt-0 mt-3">
+					<ul class="footer__aditon mini-sm:flex leading-6 font-semibold sm:mt-0 mt-3 _anim-items _anim-no-hide">
 						<li class="hover:opacity-50 transition-animation-150">
 							<a href="">Home</a>
 						</li>
@@ -494,7 +550,7 @@
 					</ul>
 				</div>
 				<div class="sm:flex justify-between mt-14">
-					<ul class="mini-sm:flex footer__adition-menu">
+					<ul class="mini-sm:flex footer__adition-menu _anim-items _anim-no-hide">
 						<li>
 							<a class="opacity-50 hover:opacity-100 transition-animation-150" href="">Privecy Policy</a>
 						</li>
@@ -505,7 +561,7 @@
 							<a class="opacity-50 hover:opacity-100 transition-animation-150" href="">About Us</a>
 						</li>
 					</ul>
-					<div class="text-xl leading-6 sm:mt-0 mt-3 footer__social">
+					<div class="text-xl leading-6 sm:mt-0 mt-3 footer__social _anim-items _anim-no-hide">
 						<a href=""><i class="fab fa-twitter"></i></a>
 						<a href=""><i class="fab fa-facebook-f "></i></a>
 						<a href=""><i class="fab fa-linkedin-in "></i></a>
