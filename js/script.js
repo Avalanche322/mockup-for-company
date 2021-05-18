@@ -25,19 +25,6 @@ $(document).ready(function () {
 		$(this).toggleClass('fa-times')
 	});
 })
-	/*=======================Modal Sing up=============================*/
-$(document).ready(function () {
-	$(function(){
-		$('#sing__up-btn').click(function (event) {
-			$('#modal-form').removeClass('modal-form__hidden').addClass('modal-form__visible');
-			$('body').addClass('overflow-hidden');
-		});
-		$('#modal-form__close').click(function (event) {
-			$('#modal-form').removeClass('modal-form__visible').addClass('modal-form__hidden');
-			$('body').removeClass('overflow-hidden');
-		});
-	});
-})
 	/*=======================Slider for reviews=============================*/
 $(document).ready(function () {
 	$('.reviews__slider').slick({

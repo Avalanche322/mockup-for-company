@@ -38,7 +38,7 @@
 	</div>
 	<!--======================Wrapper================================-->
 	<div class="min-h-screen flex flex-col font-body overflow-hidden">
-		<header class="absolute z-20 w-full md:py-12 py-6 text-white transition-animation-150"><!--Header-->
+		<header class="absolute z-20 w-full md:py-12 py-6 text-white transition-all duration-200 ease-in"><!--Header-->
 			<div class="lg:container lg:px-12 px-5">
 				<div class="flex items-center justify-between">
 					<div class="flex z-10">
@@ -79,59 +79,27 @@
 		</header>
 		<!--======================Main content================================-->
 		<main>
-			<!--======================Modal Login==============================-->
-			<div id="modal-form" class="modal-form__hidden absolute z-30 w-full h-full bg-blue-dark bg-opacity-40 md:px-0 sm:px-10 px-5">
-				<div class="relative mx-auto w-full md:w-1/2 lg:w-1/3 m-8">
-					<div class="shadow-lg bg-white rounded-lg p-8">
-						<div class="flex justify-end mb-6">
-							<button class="focus:outline-none" id="modal-form__close">
-								<span>
-									<i class="fa fa-times text-xl origin-center transform hover:rotate-45 transition-animation-150"></i>
-								</span>
-							</button>
-						</div>			
-						<h2 class="text-center text-2xl">Login</h2>			
-						<form class="pt-6 pb-2 my-2">
-							<div class="mb-4">
-								<label class="block text-sm font-bold mb-2" for="email">
-									Email Address
-								</label>
-								<input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="email"
-									type="text" placeholder="Email Address">
-							</div>
-							<div class="mb-6">
-								<label class="block text-sm font-bold mb-2" for="password">
-									Password
-								</label>
-								<input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker mb-3" id="password"
-									type="password" placeholder="Password">
-							</div>
-							<div class="block md:flex items-center justify-between">						
-									<a class="block max-w-max leading-tight uppercase shadow-3xl rounded-md py-3 px-4 transform active:translate-y-1 active:shadow-none transition-animation-150 bg-blue-dark text-white cursor-pointer">
-										Sign In</a>
-									<a href="#" class="block mt-4 md:mt-0 hover:text-gray transition-animation-150">Forget Password?</a>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
 			<!--======================Hero==============================-->
 			<section>
 				<div class="hero__gradient-bg xl:pt-60 xl:pb-44 pt-40 pb-28">	
 					<div class="xl:container lg:px-12 px-5">
 						<div class="flex xl:flex-row flex-col xl:justify-between items-center text-white">
 							<div class="max-w-xl">
-								<h2 class="text-6xl leading-14 uppercase font-bold">lorem Ipsum Dolor sit amet</h2>
-								<p class="text-lg leading-9">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+								<h2 class="text-6xl leading-14 uppercase font-bold hero__title _anim-items _anim-no-hide">lorem Ipsum Dolor sit amet</h2>
+								<p class="text-lg leading-9 hero__text _anim-items _anim-no-hide">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 									incididunt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc
 									laboris nisi ut aliquip ex ea commodo consequat.
 								</p>
 								<div class="flex mt-9">
-									<a class="button bg-blue-dark sm:px-11 px-3" href="">Buy now</a>
-									<a class="button bg-white text-blue-dark font-bold sm:px-7 px-2 ml-7" href="">Try for free</a>
+									<div class="button-container _anim-items _anim-no-hide">
+										<a class="button bg-blue-dark sm:px-11 px-3" href="">Buy now</a>
+									</div>
+									<div class="button-container _anim-items _anim-no-hide">
+										<a class="button bg-white text-blue-dark font-bold sm:px-7 px-2 ml-7" href="">Try for free</a>
+									</div>
 								</div>
 							</div>
-							<div class="xl:mt-0 mt-20">
+							<div class="xl:mt-0 mt-20 hero__video-container _anim-items _anim-no-hide">
 								<video id="my-video" class="video-js vjs-big-play-centered object-cover sm:max-w-lg sm:max-h-72 max-w-xs max-h-52" controls preload="auto" data-setup='{"poster" : "img/hero/video/prevue.png"}'>
 									<source src="img/hero/video/welcome-to-our-office.mp4" type="video/mp4" />
 									<p class="vjs-no-js">
@@ -170,8 +138,10 @@
 								incididunt ut labore et dolore magna aliqua.</p>
 						</div>
 					</div>
-					<a class="button bg-lime px-6 mx-auto mt-16 mb-24 text-white font-bold leading-tight easy-useful__btn _anim-items _anim-no-hide" href="">
-						Get started</a>
+					<div class="button-container _anim-items _anim-no-hide">
+						<a class="button bg-lime px-6 mx-auto mt-16 mb-24 text-white font-bold leading-tight easy-useful__btn "href="">
+							Get started</a>
+					</div>
 				</div>
 				<div class="extra-md:flex text-white">
 					<div class="bg-blue-light w-full py-14 text-center easy-useful__block _anim-items _anim-no-hide">

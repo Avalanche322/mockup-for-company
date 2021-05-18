@@ -20992,8 +20992,6 @@ html{
 @media (min-width: 768px){
   .sing__up:hover{
     --tw-border-opacity: 1;
-    border-color: rgba(255, 255, 255, var(--tw-border-opacity));
-    --tw-border-opacity: 1;
     border-color: rgba(6, 30, 55, var(--tw-border-opacity));
     --tw-border-opacity: 1;
   }
@@ -21024,8 +21022,8 @@ header.sticky{
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  transition-duration: 200ms;
 }
 
 @media (min-width: 768px){
@@ -21211,34 +21209,6 @@ header.sticky .sing__up:hover{
 
 .easy-useful__item._active:nth-child(3){
   transition-duration: 1000ms;
-}
-
-.easy-useful__btn{
-  opacity: 0;
-  --tw-translate-x: 0;
-  --tw-translate-y: 0;
-  --tw-rotate: 0;
-  --tw-skew-x: 0;
-  --tw-skew-y: 0;
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
-  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  --tw-translate-y: 100%;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-  transition-timing-function: linear;
-  transition-duration: 700ms;
-}
-
-.easy-useful__btn._active{
-  opacity: 1;
-  --tw-translate-y: 0px;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-  transition-duration: 1200ms;
 }
 
 .easy-useful__block{
@@ -21966,6 +21936,36 @@ header.sticky .sing__up:hover{
   .transition-loader-inner label {
     font-size: 0.5rem;
     line-height: 1.5;
+  }
+}
+
+@media(min-width:768px){
+  .button-container{
+    opacity: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    --tw-translate-y: 100%;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    transition-timing-function: linear;
+    transition-duration: 700ms;
+  }
+
+  .button-container._active{
+    opacity: 1;
+    --tw-translate-y: 0px;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-duration: 1200ms;
   }
 }
 

@@ -99,10 +99,10 @@ html{
 	@apply md:hover:text-blue-dark transition-animation-150 md:hover:text-opacity-100 hover:text-opacity-50 hover:text-white;
 }
 .sing__up{
-	@apply block max-w-xs border border-white text-xl leading-6 md:px-4 md:py-1 py-2 md:text-sm md:hover:text-blue-dark md:hover:border-blue-dark transition-animation-150 md:mt-0 mt-9 md:mx-0 mx-auto md:hover:text-opacity-100 hover:text-opacity-50 hover:text-white md:hover:border-white md:hover:border-opacity-100 hover:border-opacity-50;
+	@apply block max-w-xs border border-white text-xl leading-6 md:px-4 md:py-1 py-2 md:text-sm md:hover:text-blue-dark md:hover:border-blue-dark transition-animation-150 md:mt-0 mt-9 md:mx-0 mx-auto md:hover:text-opacity-100 hover:text-opacity-50 hover:text-white  md:hover:border-opacity-100 hover:border-opacity-50;
 }
 header.sticky{
-	@apply bg-blue-dark fixed md:py-5 transition-animation-150;
+	@apply bg-blue-dark fixed md:py-5 transition-all duration-200 ease-in;
 }
 header.sticky .menu__link{
 	@apply hover:text-opacity-50 hover:text-white;
@@ -169,12 +169,7 @@ header.sticky .sing__up{
 .easy-useful__item._active:nth-child(3){
 	@apply duration-1000;
 }
-.easy-useful__btn{
-	@apply opacity-0 transition-all duration-700 ease-linear transform translate-y-full;
-}
-.easy-useful__btn._active{
-	@apply opacity-100 translate-y-0 transition-all ease-out duration-1200;
-}
+
 .easy-useful__block{
 	@apply opacity-0 transition-all duration-700 ease-linear;
 }
@@ -413,6 +408,21 @@ header.sticky .sing__up{
 }
 .transition-loader-inner label {
 	@apply leading-normal text-xxs;
+}
+}
+
+@media(min-width:768px){
+/*=======Hero===========*/
+.hero__title{}
+.hero__text{}
+.hero__title._active{}
+.hero__text._active{}
+/*=======Easy & Useful===========*/
+.button-container{
+	@apply opacity-0 transition-all duration-700 ease-linear transform translate-y-full;
+}
+.button-container._active{
+	@apply opacity-100 translate-y-0 transition-all ease-out duration-1200;
 }
 }
 
