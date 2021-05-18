@@ -1,14 +1,19 @@
-/*===================Preloader=========================*/
 function loadData() {
 	return new Promise((resolve, reject) => {
 		setTimeout(resolve, 2300);
 	})
 }
+/*===================Preloader=========================*/
 loadData().then(() => {
 	let preloaderEl = document.getElementById('preloader');
 	preloaderEl.classList.add('preloader__hidden');
 	preloaderEl.classList.remove('preloader__visible');
 	$('body').removeClass('loading');
+});
+/*=========================Animation====================================*/
+loadData().then(() => {
+	animOnScroll();
+	window.addEventListener('scroll', animOnScroll);
 });
 
 /*=======================Spoiler for services=============================*/
@@ -91,7 +96,6 @@ window.addEventListener('scroll', function(){
 const animItems = document.querySelectorAll('._anim-items');
 
 if (animItems.length > 0) {
-	window.addEventListener('scroll', animOnScroll);
 	function animOnScroll() {
 		for (let index = 0; index < animItems.length; index++) {
 			const animItem = animItems[index];
@@ -119,8 +123,4 @@ if (animItems.length > 0) {
 			scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 		return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
 	}
-
-	setTimeout(() => {
-		animOnScroll();
-	}, 1500);
 }
