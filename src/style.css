@@ -19,12 +19,6 @@ html{
 .transition-animation-150{
 	@apply transition-all ease-in-out duration-150;
 }
-.section__title{
-	@apply opacity-0 transition-all duration-1000 ease-linear;
-}
-.section__title._active{
-	@apply opacity-100 transition-all duration-1000 ease-linear;
-}
 /*=====================================Preloader========================================================*/
 #preloader {
 	background-image:linear-gradient(-53.0deg, rgba(0, 184, 212,1) -11%, rgba(29, 233, 182,1) 111%);
@@ -154,70 +148,6 @@ header.sticky .sing__up{
 .material-icons.service__material-icon{
 	@apply text-xl leading-7;
 }
-.easy-useful__item{
-	@apply opacity-0 transition-all duration-700 ease-linear transform translate-y-full;
-}
-.easy-useful__item._active{
-	@apply opacity-100 translate-y-0 transition-all ease-out;
-}
-.easy-useful__item._active:nth-child(1){
-	@apply duration-500;
-}
-.easy-useful__item._active:nth-child(2){
-	@apply duration-700;
-}
-.easy-useful__item._active:nth-child(3){
-	@apply duration-1000;
-}
-
-.easy-useful__block{
-	@apply opacity-0 transition-all duration-700 ease-linear;
-}
-.easy-useful__block:nth-child(1),
-.easy-useful__block:nth-child(2){
-	@apply transform -translate-x-full;
-}
-.easy-useful__block:nth-child(3),
-.easy-useful__block:nth-child(4){
-	@apply transform translate-x-full;
-}
-.easy-useful__block._active{
-	@apply opacity-100 translate-x-0 transition-all ease-out;
-}
-.easy-useful__block._active:nth-child(1){
-	@apply duration-1000;
-}
-.easy-useful__block._active:nth-child(2){
-	@apply duration-500;
-}
-.easy-useful__block._active:nth-child(3){
-	@apply duration-700;
-}
-.easy-useful__block._active:nth-child(4){
-	@apply duration-1200;
-}
-/*=====================================Sevice========================================================*/
-.service__item{
-	@apply opacity-0 transition-all duration-700 ease-linear transform -translate-x-full;
-}
-.service__item._active{
-	@apply opacity-100 translate-x-0 transition-all ease-out;
-}
-.service__item._active:nth-child(1){
-	@apply duration-300;
-}
-.service__item._active:nth-child(2){
-	@apply duration-500;
-}
-.service__item._active:nth-child(3){
-	@apply duration-700;
-}
-.service__item._active:nth-child(4){
-	@apply duration-1000;
-}
-.service__item._active:nth-child(5){
-	@apply duration-1200;
-}
 /*=====================================Reviews========================================================*/
 .reviews__slider .slick-list{
 	@apply overflow-hidden;
@@ -231,6 +161,15 @@ header.sticky .sing__up{
 .reviews__slider-item{
 	@apply flex items-center sm:p-5 p-2;
 }
+.reviews__slider-img{
+	max-width: 61px;
+	max-height: 65px;
+}
+.reviews__slider-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
 .reviews__gradient-bg{
 	position: relative;
 }
@@ -238,18 +177,6 @@ header.sticky .sing__up{
 	background-image: linear-gradient(-53.0deg, rgba(0, 184, 212, 0.94) -3%, rgba(29, 233, 182, 0.94) 104%), 
 	url('../img/reviews/reviews_bg.png');
 	@apply h-full w-full bg-lime bg-cover;
-}
-.reviews__title{
-	@apply opacity-0 transition-all duration-700 ease-linear transform -translate-x-full;
-}
-.reviews__title._active{
-	@apply opacity-100 translate-x-0 transition-all ease-out duration-1000;
-}
-.reviews__slider{
-	@apply opacity-0 transition-all duration-700 ease-linear transform translate-y-full;
-}
-.reviews__slider._active{
-	@apply opacity-100 translate-y-0 transition-all ease-out duration-1000;
 }
 /*=====================================Our Team========================================================*/
 .our-team__slider-img .slick-track{
@@ -264,7 +191,7 @@ header.sticky .sing__up{
 .our-team__slider-img .our-team__slider-img-item{
 	@apply opacity-20;
 }
-.our-team__slider-img .slick-slide.slick-center  .our-team__slider-img-item {
+.our-team__slider-img .slick-slide.slick-center .our-team__slider-img-item {
 	@apply opacity-100 w-40 h-40;
 }
 
@@ -280,34 +207,7 @@ header.sticky .sing__up{
 .our-team__slider-content-social a:last-child{
 	@apply mr-0;
 }
-.our-team__slider-img{
-	@apply opacity-0 transition-all duration-1000 ease-linear;
-}
-.our-team__slider-img._active{
-	@apply opacity-100 transition-all duration-1000 ease-linear;
-}
-.our-team__slider-content{
-	@apply opacity-0 transition-all duration-700 ease-linear transform translate-y-full;
-}
-.our-team__slider-content._active{
-	@apply opacity-100 translate-y-0 transition-all ease-out duration-1000;
-}
 /*=====================================Contact Us========================================================*/
-.contact-us__form-item{
-	@apply border border-blue-dark py-4 pl-4 rounded-md w-full opacity-0 transition-all duration-700 ease-linear;
-}
-.contact-us__form-item:nth-child(1),
-.contact-us__form-item:nth-child(3){
-	@apply transform -translate-x-full;
-}
-.contact-us__form-item:nth-child(2),
-.contact-us__form-item:nth-child(4){
-	@apply transform translate-x-full;
-}
-
-.contact-us__form-item._active{
-	@apply opacity-100 transition-all translate-x-0 ease-out duration-1000;
-}
 .contact-us__form input::placeholder, 
 .contact-us__form textarea::placeholder {
 	@apply text-blue-dark leading-7 font-medium font-body;
@@ -333,6 +233,9 @@ header.sticky .sing__up{
 .contact-us__form-subscribe-text{
 	@apply relative cursor-pointer px-1 select-none text-base leading-tight font-medium text-blue-dark;
 }
+.contact-us__form-item{
+	@apply border border-blue-dark p-4 rounded-md w-full;
+}
 .contact-us__form-subscribe-text::before {
   position: absolute;
   content: attr(data-content);
@@ -342,18 +245,6 @@ header.sticky .sing__up{
   text-decoration-thickness: 3px;
   text-decoration-color: #363839;
   transition: clip-path 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-.contact-us__form-subscribe-container{
-	@apply opacity-0 transition-all duration-700 ease-linear transform -translate-x-full;
-}
-.contact-us__form-subscribe-container._active{
-	@apply opacity-100 translate-x-0 transition-all ease-out duration-1000;
-}
-.contact-us__form-btn{
-	@apply opacity-0 transition-all duration-700 ease-linear transform translate-x-full;
-}
-.contact-us__form-btn._active{
-	@apply opacity-100 translate-x-0 transition-all ease-out duration-1000;
 }
 /*=====================================Footer========================================================*/
 .footer__adition-menu li::before{
@@ -365,25 +256,6 @@ header.sticky .sing__up{
 }
 .footer__social a:last-child{
 	@apply mr-0;
-}
-.footer__logo{
-	@apply opacity-0 transition-all duration-700 ease-linear transform translate-x-full;
-}
-.footer__aditon{
-	@apply opacity-0 transition-all duration-700 ease-linear transform translate-x-full;
-}
-.footer__adition-menu{
-	@apply opacity-0 transition-all duration-700 ease-linear transform -translate-x-full;
-}
-.footer__social{
-	@apply opacity-0 transition-all duration-700 ease-linear transform -translate-x-full;
-}
-
-.footer__logo._active,
-.footer__aditon._active,
-.footer__adition-menu._active,
-.footer__social._active{
-	@apply opacity-100 translate-x-0 transition-all ease-out duration-1000;
 }
 /*=====================================Adaptation========================================================*/
 @media(max-width:768px){
@@ -412,11 +284,6 @@ header.sticky .sing__up{
 }
 
 @media(min-width:768px){
-/*=======Hero===========*/
-.hero__title{}
-.hero__text{}
-.hero__title._active{}
-.hero__text._active{}
 /*=======Easy & Useful===========*/
 .button-container{
 	@apply opacity-0 transition-all duration-700 ease-linear transform translate-y-full;
@@ -424,5 +291,165 @@ header.sticky .sing__up{
 .button-container._active{
 	@apply opacity-100 translate-y-0 transition-all ease-out duration-1200;
 }
+/*=======Disable animation for mobile===========*/
+/*Hero*/
+.hero__video-container{
+	@apply opacity-0 transition-all duration-700 ease-linear transform translate-x-full;
+}
+.hero__title,
+.hero__text{
+	@apply opacity-0 transition-all duration-1000 ease-linear transform -translate-x-full;
+}
+.hero__title._active,
+.hero__text._active,
+.hero__video-container._active{
+	@apply opacity-100 translate-x-0 transition-all ease-out duration-1000;
+}
+/*Common*/
+.section__title{
+	@apply opacity-0 transition-all duration-1000 ease-linear;
+}
+.section__title._active{
+	@apply opacity-100 transition-all duration-1000 ease-linear;
+}
+/*Footer*/
+.footer__logo{
+	@apply opacity-0 transition-all duration-700 ease-linear transform translate-x-full;
+}
+.footer__aditon{
+	@apply opacity-0 transition-all duration-700 ease-linear transform translate-x-full;
+}
+.footer__adition-menu{
+	@apply opacity-0 transition-all duration-700 ease-linear transform -translate-x-full;
+}
+.footer__social{
+	@apply opacity-0 transition-all duration-700 ease-linear transform -translate-x-full;
+}
+.footer__logo._active,
+.footer__aditon._active,
+.footer__adition-menu._active,
+.footer__social._active{
+	@apply opacity-100 translate-x-0 transition-all ease-out duration-1000;
+}
+/*Contact us*/
+.contact-us__form-item:nth-child(1),
+.contact-us__form-item:nth-child(3){
+	@apply transform -translate-x-full;
+}
+.contact-us__form-item:nth-child(2),
+.contact-us__form-item:nth-child(4){
+	@apply transform translate-x-full;
+}
+.contact-us__form-subscribe-container{
+	@apply opacity-0 transition-all duration-700 ease-linear transform -translate-x-full;
+}
+.contact-us__form-subscribe-container._active{
+	@apply opacity-100 translate-x-0 transition-all ease-out duration-1000;
+}
+.contact-us__form-btn{
+	@apply opacity-0 transition-all duration-700 ease-linear transform translate-x-full;
+}
+.contact-us__form-btn._active{
+	@apply opacity-100 translate-x-0 transition-all ease-out duration-1000;
+}
+.contact-us__form-item{
+	@apply opacity-0 transition-all duration-700 ease-linear;
+}
+.contact-us__form-item._active{
+	@apply opacity-100 transition-all translate-x-0 ease-out duration-1000;
+}
+/*Our Team*/
+.our-team__slider-img{
+	@apply opacity-0 transition-all duration-1000 ease-linear;
+}
+.our-team__slider-img._active{
+	@apply opacity-100 transition-all duration-1000 ease-linear;
+}
+.our-team__slider-content{
+	@apply opacity-0 transition-all duration-700 ease-linear transform translate-y-full;
+}
+.our-team__slider-content._active{
+	@apply opacity-100 translate-y-0 transition-all ease-out duration-1000;
+}
+/*Reviews*/
+.reviews__title{
+	@apply opacity-0 transition-all duration-700 ease-linear transform -translate-x-full;
+}
+.reviews__title._active{
+	@apply opacity-100 translate-x-0 transition-all ease-out duration-1000;
+}
+.reviews__slider{
+	@apply opacity-0 transition-all duration-700 ease-linear transform translate-y-3/4;
+}
+.reviews__slider._active{
+	@apply opacity-100 translate-y-0 transition-all ease-out duration-1000;
+}
+
+/*Sevice*/
+.service__item{
+	@apply opacity-0 transition-all duration-700 ease-linear transform -translate-x-full;
+}
+.service__item._active{
+	@apply opacity-100 translate-x-0 transition-all ease-out;
+}
+.service__item._active:nth-child(1){
+	@apply duration-300;
+}
+.service__item._active:nth-child(2){
+	@apply duration-500;
+}
+.service__item._active:nth-child(3){
+	@apply duration-700;
+}
+.service__item._active:nth-child(4){
+	@apply duration-1000;
+}
+.service__item._active:nth-child(5){
+	@apply duration-1200;
+}
+
+/*Easy & Useful*/
+.easy-useful__block:nth-child(1),
+.easy-useful__block:nth-child(2){
+	@apply transform -translate-x-full;
+}
+.easy-useful__block:nth-child(3),
+.easy-useful__block:nth-child(4){
+	@apply transform translate-x-full;
+}
+.easy-useful__block{
+	@apply opacity-0 transition-all duration-700 ease-linear;
+}
+.easy-useful__block._active{
+	@apply opacity-100 translate-x-0 transition-all ease-out;
+}
+.easy-useful__block._active:nth-child(1){
+	@apply duration-1000;
+}
+.easy-useful__block._active:nth-child(2){
+	@apply duration-500;
+}
+.easy-useful__block._active:nth-child(3){
+	@apply duration-700;
+}
+.easy-useful__block._active:nth-child(4){
+	@apply duration-1200;
+}
+.easy-useful__item{
+	@apply opacity-0 transition-all duration-700 ease-linear transform translate-y-full;
+}
+.easy-useful__item._active{
+	@apply opacity-100 translate-y-0 transition-all ease-out;
+}
+.easy-useful__item._active:nth-child(1){
+	@apply duration-500;
+}
+.easy-useful__item._active:nth-child(2){
+	@apply duration-700;
+}
+.easy-useful__item._active:nth-child(3){
+	@apply duration-1000;
+}
+
 }
 
