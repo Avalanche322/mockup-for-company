@@ -4,7 +4,7 @@ An website use GitPage for hosting, CSS, Tailwind, HTML, JQuery and JS. Plugins 
 
 ## Project Status
 
-This project is currently done. Users can 
+This project is currently done. Users can see information about Company Dart team their services and additional information, contact them.
 
 ## Project Screen Shots
 
